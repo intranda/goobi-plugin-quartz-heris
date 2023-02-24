@@ -1,0 +1,9 @@
+<config>
+    <!-- Folder in which the heris export file is expected to be stored -->
+	<herisFolder>/tmp/</herisFolder>
+    
+    <!-- timestamp of the last run -->
+    <!-- execute updates only, if the latest heris file is newer than the timestamp -->
+    <lastrun>1</lastrun>
+    
+</config>

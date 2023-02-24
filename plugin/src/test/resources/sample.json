@@ -1,0 +1,4000 @@
+[
+  {
+    "HERIS-ID": "112518",
+    "Alte Objekt-ID": "130724",
+    "Katalogtitel": "10 Fahrzeuge der Wiener Lokalbahn",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": "1894",
+    "Bauzeit bis": "1928",
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\3\\B\\20\\7E\\3B207E33-D47B-414E-8FBD-1EF43F4A4518",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "93455",
+    "Alte Objekt-ID": "108486",
+    "Katalogtitel": "10 Kalvarienbergkapellen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Telfs"
+    ],
+    "Katastralgemeinde": [
+      "81310 Telfs"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "4435",
+      "4440/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Möserer Dorfstraße",
+    "Hausnummer": "5",
+    "PLZ": "6100",
+    "Ort": "Telfs",
+    "Zusatztext aus Adresse": "in der Nähe",
+    "Weitere Adressen": [
+      "Mösern  6410 Telfs #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\F\\7\\4B\\31\\F74B31FC-E1CC-4CF1-97CC-F212C9A352AD",
+    "Gehört zu HERIS-ID": "3517",
+    "Gehört zu alter Objekt-ID": "4152",
+    "Longitude": "11.14567",
+    "Latitude": "47.31181"
+  },
+  {
+    "HERIS-ID": "41113",
+    "Alte Objekt-ID": "41554",
+    "Katalogtitel": "10 Lünetten-Reliefs/vier Jahreszeiten/div.Stände darstellend",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Wohnbauten",
+    "Hauptkategorie fein": "Bürgerhaus",
+    "Nebenkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Nebenkategorie mittel": "wandfeste Ausstattung",
+    "Nebenkategorie fein": "Stuck",
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Wien"
+    ],
+    "Katastralgemeinde": [
+      "01305 Meidling"
+    ],
+    "Bezirk": [
+      "Wien(Stadt)"
+    ],
+    "Bundesland": [
+      "Wien"
+    ],
+    "Grundstücksnummern": [
+      "77"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Meidlinger Hauptstraße",
+    "Hausnummer": "11",
+    "PLZ": "1120",
+    "Ort": "Wien (Meidling)",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\7\\EF\\8A\\47EF8A8D-4CFC-4F78-A1C8-B99D071001CD",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "16.33013",
+    "Latitude": "48.18206"
+  },
+  {
+    "HERIS-ID": "112833",
+    "Alte Objekt-ID": "131055",
+    "Katalogtitel": "10 Möbel aus den Beständen der Universität für angewandte Kunst",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Möbel",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negative §2-Mitteilung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\D\\A0\\2E\\5DA02E2A-669A-4D41-BA04-777BB43D5A27",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "112028",
+    "Alte Objekt-ID": "130079",
+    "Katalogtitel": "10 Personenwaggons der Pressburger Bahn",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\A\\75\\C5\\4A75C5C6-F44C-4990-9762-27370EE19C9A",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "31736",
+    "Alte Objekt-ID": "28727",
+    "Katalogtitel": "10 Weinkeller + Bauernhaus",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "landwirtschaftliche Bauten",
+    "Hauptkategorie fein": "Keller",
+    "Nebenkategorie grob": "Profanbauten",
+    "Nebenkategorie mittel": "landwirtschaftliche Bauten",
+    "Nebenkategorie fein": "Bauernhaus",
+    "Denkmalschutzstatus": "mangelnde Denkmalqualität",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Güssing"
+    ],
+    "Katastralgemeinde": [
+      "31011 Glasing"
+    ],
+    "Bezirk": [
+      "Güssing"
+    ],
+    "Bundesland": [
+      "Burgenland"
+    ],
+    "Grundstücksnummern": [
+      null
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\B\\2\\4B\\C2\\B24BC207-7311-4071-8071-A70B906D0FF2",
+    "Gehört zu HERIS-ID": "1108",
+    "Gehört zu alter Objekt-ID": "953",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "18036",
+    "Alte Objekt-ID": "14327",
+    "Katalogtitel": "110-kv-Schalthaus",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Energie/Versorgung",
+    "Hauptkategorie fein": "Kraftwerk",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Ja",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kleinzell im Mühlkreis"
+    ],
+    "Katastralgemeinde": [
+      "47210 Kleinzell"
+    ],
+    "Bezirk": [
+      "Rohrbach"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      ".209"
+    ],
+    "Bauzeit von": "1919",
+    "Bauzeit bis": "1924",
+    "Publiziert": "Ja",
+    "Straße": "Partenstein",
+    "Hausnummer": "18",
+    "PLZ": "4114",
+    "Ort": "Kleinzell im Mühlkreis (Partenstein)",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\3\\BE\\5F\\53BE5F14-9232-11D5-AF94-0000F87751EF",
+    "Gehört zu HERIS-ID": "1542",
+    "Gehört zu alter Objekt-ID": "219",
+    "Longitude": "13.98777",
+    "Latitude": "48.43399"
+  },
+  {
+    "HERIS-ID": "244333",
+    "Alte Objekt-ID": null,
+    "Katalogtitel": "11 Fahrzeuge der Salzburger Lokalbahn: Elektrotriebfahrzeuge ET1, ET3, ET6, ET7, ET33, ET10 Beiwagen, Waggons (Wagen) BC162, C158, CDF116, C301, B306",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Plainstraße",
+    "Hausnummer": "70",
+    "PLZ": "5020",
+    "Ort": "Salzburg",
+    "Zusatztext aus Adresse": "Salzburg AG",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": null,
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "13.04123",
+    "Latitude": "47.81784"
+  },
+  {
+    "HERIS-ID": "111548",
+    "Alte Objekt-ID": "129446",
+    "Katalogtitel": "11 Kammern, 1 Pumpenhaus, 3 Zugänge, Hartlsee",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Wildalpen"
+    ],
+    "Katastralgemeinde": [
+      "67112 Wildalpen"
+    ],
+    "Bezirk": [
+      "Liezen"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "23/2",
+      "291/1, 1164",
+      "291/43, 1108/25",
+      "408",
+      ".632, 739, 740, 764",
+      "784/10, 793/12, 1173/2",
+      "793/3"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\8\\7E\\1D\\D87E1DEC-8CBE-457A-9D7B-266EAE2147F5",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "103929",
+    "Alte Objekt-ID": "120496",
+    "Katalogtitel": "11 Kreuzwegkapellen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Flaurling"
+    ],
+    "Katastralgemeinde": [
+      "81301 Flaurling"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "1203, 1208, 1210/2"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Oberdorf",
+    "Hausnummer": "2",
+    "PLZ": "6403",
+    "Ort": "Flaurling",
+    "Zusatztext aus Adresse": "südlich ",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\E\\33\\51\\8E3351A0-DCD1-4B58-80C0-AA9C0991B5E4",
+    "Gehört zu HERIS-ID": "3485",
+    "Gehört zu alter Objekt-ID": "5864",
+    "Longitude": "11.12272",
+    "Latitude": "47.28993"
+  },
+  {
+    "HERIS-ID": "13757",
+    "Alte Objekt-ID": "9968",
+    "Katalogtitel": "11 Stationen der Kreuzweganlage",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Gramastetten"
+    ],
+    "Katastralgemeinde": [
+      "45611 Gramastetten"
+    ],
+    "Bezirk": [
+      "Urfahr-Umgebung"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1357/2",
+      "1374/6",
+      "1374/8",
+      "1425",
+      "259/1",
+      "2685",
+      "280/2",
+      "283/4",
+      "288",
+      "291"
+    ],
+    "Bauzeit von": "1833",
+    "Bauzeit bis": "1834",
+    "Publiziert": "Ja",
+    "Straße": "Wöran-Straße",
+    "Hausnummer": "1",
+    "PLZ": "4201",
+    "Ort": "Gramastetten",
+    "Zusatztext aus Adresse": "gegenüber",
+    "Weitere Adressen": [
+      "Urtlstraße 2 4201 Gramastetten bei",
+      "Urtlstraße 22 4201 Gramastetten bei",
+      "Kreuzweg 10 4201 Gramastetten bei",
+      "Kreuzweg 2 4201 Gramastetten bei",
+      "Kreuzweg 24 4201 Gramastetten bei",
+      "Urtlstraße 8 4201 Gramastetten bei",
+      "Urtlstraße 23 4201 Gramastetten bei",
+      "Urtlstraße 27 4201 Gramastetten bei",
+      "Kreuzweg 14 4201 Gramastetten bei",
+      "Linzerstraße  4201 Gramastetten #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\6\\45\\FD\\4645FDAD-1A13-11D6-B7FB-93D4A4EAB80A",
+    "Gehört zu HERIS-ID": "1495",
+    "Gehört zu alter Objekt-ID": "1193",
+    "Longitude": "14.19293",
+    "Latitude": "48.38001"
+  },
+  {
+    "HERIS-ID": "111854",
+    "Alte Objekt-ID": "129868",
+    "Katalogtitel": "12 Fahrzeuge der Salzburger Stadt- und Lokalbahnen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": "1895",
+    "Bauzeit bis": "1911",
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\A\\61\\70\\DA61703E-A467-4A96-8566-DEA52487C368",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "83231",
+    "Alte Objekt-ID": "97103",
+    "Katalogtitel": "12 Stationsbildstöcke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Scharnitz"
+    ],
+    "Katastralgemeinde": [
+      "81127 Scharnitz"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "572/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Porta-Claudia-Straße",
+    "Hausnummer": "14",
+    "PLZ": "6108",
+    "Ort": "Scharnitz",
+    "Zusatztext aus Adresse": "in der Nähe",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\7\\3\\54\\90\\735490EA-AD22-4CF8-84B8-E57076AA202C",
+    "Gehört zu HERIS-ID": "3409",
+    "Gehört zu alter Objekt-ID": "3150",
+    "Longitude": "11.26218",
+    "Latitude": "47.39089"
+  },
+  {
+    "HERIS-ID": "112057",
+    "Alte Objekt-ID": "130108",
+    "Katalogtitel": "12 Triebwagen, 13 Beiwagen, 4 Arbeitstriebwagen und 21 Arbeitswagen und 21 Arbei",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\F\\7\\E4\\7F\\F7E47FA6-E8D9-483E-A470-23E04F3DB77B",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111764",
+    "Alte Objekt-ID": "129774",
+    "Katalogtitel": "13 Fahrzeuge der Salzburger Lokalbahnen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\8\\18\\55\\A81855CE-E8AF-43BF-A0E0-C595F5CF68BE",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "11479",
+    "Alte Objekt-ID": "7580",
+    "Katalogtitel": "14 Arbeiterwohnhäuser",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Wohnbauten",
+    "Hauptkategorie fein": "Arbeiter-/Angestelltenwohnhaus",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Dornbirn"
+    ],
+    "Katastralgemeinde": [
+      "92001 Dornbirn"
+    ],
+    "Bezirk": [
+      "Dornbirn"
+    ],
+    "Bundesland": [
+      "Vorarlberg"
+    ],
+    "Grundstücksnummern": [
+      ".2341, .2342/1, .2342/2, .2342/3, .2342/4, .2342/5, .2342/6, .2343/1, .2343/2, .2343/3, .2343/4, .2343/5, .2343/6"
+    ],
+    "Bauzeit von": "1907",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Bündtlittenstraße",
+    "Hausnummer": "14",
+    "PLZ": "6850",
+    "Ort": "Dornbirn",
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": [
+      "Bündtlittenstraße 10 6850 Dornbirn",
+      "Bündtlittenstraße 12 6850 Dornbirn",
+      "Bündtlittenstraße 32 6850 Dornbirn",
+      "Bündtlittenstraße 8 6850 Dornbirn",
+      "Bündtlittenstraße 26 6850 Dornbirn",
+      "Bündtlittenstraße 24 6850 Dornbirn",
+      "Bündtlittenstraße 20 6850 Dornbirn",
+      "Bündtlittenstraße 34 6850 Dornbirn",
+      "Bündtlittenstraße 22 6850 Dornbirn",
+      "Bündtlittenstraße 16 6850 Dornbirn",
+      "Bündtlittenstraße 28 6850 Dornbirn",
+      "Bündtlittenstraße 30 6850 Dornbirn",
+      "Bündtlittenstraße 18 6850 Dornbirn"
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\3\\21\\CB\\4321CB0E-9232-11D5-AF94-0000F87751EF",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "96469",
+    "Alte Objekt-ID": "111967",
+    "Katalogtitel": "14 Kreuzwegstationen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Mühlbachl"
+    ],
+    "Katastralgemeinde": [
+      "81204 Mühlbachl"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "1477, 1478, 1479/3",
+      "1479/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Mützens",
+    "Hausnummer": "49",
+    "PLZ": "6143",
+    "Ort": "Mühlbachl",
+    "Zusatztext aus Adresse": "in der Nähe",
+    "Weitere Adressen": [
+      "Mützens  6143 Mühlbachl #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\3\\7\\D0\\A1\\37D0A1D0-8F0D-4895-B461-762C4DFBDC80",
+    "Gehört zu HERIS-ID": "3127",
+    "Gehört zu alter Objekt-ID": "5939",
+    "Longitude": "11.44399",
+    "Latitude": "47.13808"
+  },
+  {
+    "HERIS-ID": "96838",
+    "Alte Objekt-ID": "112460",
+    "Katalogtitel": "14 Kreuzwegstationen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Sellrain"
+    ],
+    "Katastralgemeinde": [
+      "81130 Sellrain"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "1729, 1738",
+      ".70"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Sellrain",
+    "Hausnummer": "151",
+    "PLZ": "6181",
+    "Ort": "Sellrain",
+    "Zusatztext aus Adresse": "in der Nähe",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\B\\3\\E0\\79\\B3E0798D-F4FA-43A8-9029-FB2319DA793D",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "11.21559",
+    "Latitude": "47.22144"
+  },
+  {
+    "HERIS-ID": "98088",
+    "Alte Objekt-ID": "113966",
+    "Katalogtitel": "14 Kreuzwegstationen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "mangelnde Denkmalqualität",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Mayrhofen"
+    ],
+    "Katastralgemeinde": [
+      "87113 Mayrhofen"
+    ],
+    "Bezirk": [
+      "Schwaz"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "1885/3"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\5\\66\\18\\E566185B-7CB6-40E1-BD2E-C3E840F4F5FB",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "90654",
+    "Alte Objekt-ID": "105356",
+    "Katalogtitel": "14 Kreuzwegstationen nach Georgenberg",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Vomp"
+    ],
+    "Katastralgemeinde": [
+      "87011 Vomp"
+    ],
+    "Bezirk": [
+      "Schwaz"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "2942, 2832/1, 2832/3, 2949",
+      "2950"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\7\\1\\EA\\21\\71EA21D6-E9B9-4FEB-BED8-90BADF270649",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "4954",
+    "Alte Objekt-ID": "812",
+    "Katalogtitel": "14-Nothelfer-Kapelle/Fernpasskapelle",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "Kapellen",
+    "Hauptkategorie fein": "Flur-/Wegkapelle",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Nassereith"
+    ],
+    "Katastralgemeinde": [
+      "80008 Nassereith"
+    ],
+    "Bezirk": [
+      "Imst"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      ".207"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Fernpaß",
+    "Hausnummer": "481",
+    "PLZ": "6465",
+    "Ort": "Nassereith",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\1\\3\\31\\E2\\1331E2E9-9B72-11D5-AF97-0000F87751EF",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "10.82871",
+    "Latitude": "47.36303"
+  },
+  {
+    "HERIS-ID": "55782",
+    "Alte Objekt-ID": "64620",
+    "Katalogtitel": "14 Nothelfer-Kapelle, Kapelle Ginzeleit",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "Kapellen",
+    "Hauptkategorie fein": "Flur-/Wegkapelle",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Polling in Tirol"
+    ],
+    "Katastralgemeinde": [
+      "81308 Polling"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      ".148"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Pollingberg",
+    "Hausnummer": "13",
+    "PLZ": "6404",
+    "Ort": "Polling/T",
+    "Zusatztext aus Adresse": "gegenüber",
+    "Weitere Adressen": [
+      "Pollingberg  6403 Polling in Tirol #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\9\\6F\\69\\896F6967-6963-4498-9AC6-8D28353C26C3",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "11.13711",
+    "Latitude": "47.27672"
+  },
+  {
+    "HERIS-ID": "37735",
+    "Alte Objekt-ID": "36966",
+    "Katalogtitel": "14 römische Wasserleitungsrohre",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Archäologie",
+    "Hauptkategorie mittel": "Einzelfund",
+    "Hauptkategorie fein": "Einzelfund (Römische Kaiserzeit)",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Eferding"
+    ],
+    "Katastralgemeinde": [
+      "45005 Eferding"
+    ],
+    "Bezirk": [
+      "Eferding"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      null
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Schmiedstraße",
+    "Hausnummer": "29",
+    "PLZ": "4070",
+    "Ort": "Eferding",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\8\\90\\2E\\88902E4A-E0FF-40D6-A2F0-F2009493C588",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "14.02049",
+    "Latitude": "48.30859"
+  },
+  {
+    "HERIS-ID": "103120",
+    "Alte Objekt-ID": "119578",
+    "Katalogtitel": "14 Stationen des Kreuzweges",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Murau"
+    ],
+    "Katastralgemeinde": [
+      "65215 Murau"
+    ],
+    "Bezirk": [
+      "Murau"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "299/1, 299/3, 568/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\7\\8\\C3\\6F\\78C36F60-2C0A-47D7-B0EB-CB92D35A7E98",
+    "Gehört zu HERIS-ID": "2626",
+    "Gehört zu alter Objekt-ID": "5022",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "105264",
+    "Alte Objekt-ID": "122233",
+    "Katalogtitel": "14 Stationsbildstöcke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Nischen-/Kapellenbildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Pettnau"
+    ],
+    "Katastralgemeinde": [
+      "81306 Pettnau"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "248"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Schmalzgasse",
+    "Hausnummer": "11",
+    "PLZ": "6408",
+    "Ort": "Pettnau",
+    "Zusatztext aus Adresse": "in der Nähe",
+    "Weitere Adressen": [
+      "Schmalzgasse  6410 Pettnau #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\1\\2\\8A\\70\\128A7087-2865-4942-B74A-4359133A79C2",
+    "Gehört zu HERIS-ID": "3497",
+    "Gehört zu alter Objekt-ID": "5867",
+    "Longitude": "11.14107",
+    "Latitude": "47.30020"
+  },
+  {
+    "HERIS-ID": "79796",
+    "Alte Objekt-ID": "93492",
+    "Katalogtitel": "15 Bildsäulen mit Rosenkranzgeheimnissen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Bildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Bund",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kössen"
+    ],
+    "Katastralgemeinde": [
+      "82109 Kössen"
+    ],
+    "Bezirk": [
+      "Kitzbühel"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "2417/1"
+    ],
+    "Bauzeit von": "1927",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Klobensteiner Straße",
+    "Hausnummer": "73",
+    "PLZ": "6345",
+    "Ort": "Kössen",
+    "Zusatztext aus Adresse": "in der Nähe",
+    "Weitere Adressen": [
+      "Klobensteiner Straße  6345 Kössen #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\D\\42\\B4\\ED42B4A7-2EE4-4FA3-9AD6-00B6265B3556",
+    "Gehört zu HERIS-ID": "3649",
+    "Gehört zu alter Objekt-ID": "2770",
+    "Longitude": "12.39537",
+    "Latitude": "47.68911"
+  },
+  {
+    "HERIS-ID": "102907",
+    "Alte Objekt-ID": "119361",
+    "Katalogtitel": "15 Bildstöcke zu den Rosenkranzgeheimnissen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Bildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Oberwölz"
+    ],
+    "Katastralgemeinde": [
+      "65515 Winklern"
+    ],
+    "Bezirk": [
+      "Murau"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "128/1",
+      "1716/1, 1716/9, 1716/12",
+      "1716/2, 1716/11, 1724, 334/10"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\A\\C7\\B0\\8AC7B013-9C19-4568-B888-3AB673304BD5",
+    "Gehört zu HERIS-ID": "2710",
+    "Gehört zu alter Objekt-ID": "4960",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "76913",
+    "Alte Objekt-ID": "90511",
+    "Katalogtitel": "15 Bildstöcke zu den Rosenkranzgeheimnissen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Bildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Oberwölz"
+    ],
+    "Katastralgemeinde": [
+      "65515 Winklern"
+    ],
+    "Bezirk": [
+      "Murau"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "162",
+      "174",
+      "217/4",
+      "236/1",
+      "318/1",
+      "330"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": "1661",
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\7\\1\\DE\\41\\71DE41A7-5224-4653-835B-5D8900202EE4",
+    "Gehört zu HERIS-ID": "2710",
+    "Gehört zu alter Objekt-ID": "4960",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "112431",
+    "Alte Objekt-ID": "130618",
+    "Katalogtitel": "16 Fahrzeuge der Wiener Straßenbahn",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": "1919",
+    "Bauzeit bis": "1949",
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\9\\9\\12\\4B\\99124BFA-A97F-4688-BE83-306E549755E4",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "38749",
+    "Alte Objekt-ID": "38345",
+    "Katalogtitel": "1. Kreuzwegkapelle",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Traunkirchen"
+    ],
+    "Katastralgemeinde": [
+      "42161 Traunkirchen"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "7/2"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Kalvarienberg",
+    "Hausnummer": "",
+    "PLZ": "4801",
+    "Ort": "Traunkirchen",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\F\\48\\7D\\DF487D9C-80E3-41CD-AFDC-D383AB6D0987",
+    "Gehört zu HERIS-ID": "1311",
+    "Gehört zu alter Objekt-ID": "4731",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "109926",
+    "Alte Objekt-ID": "127571",
+    "Katalogtitel": "1. Kreuzwegstation",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Kirche",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Bad Goisern am Hallstättersee"
+    ],
+    "Katastralgemeinde": [
+      "42004 Goisern"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      ".29"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Stambachgraben",
+    "Hausnummer": "",
+    "PLZ": "4822",
+    "Ort": "Bad Goisern #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\B\\90\\13\\4B901322-28D0-4BAD-A0F7-D040EC8D500C",
+    "Gehört zu HERIS-ID": "1290",
+    "Gehört zu alter Objekt-ID": "1971",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "244493",
+    "Alte Objekt-ID": null,
+    "Katalogtitel": "1 Schmalspur-Elektrolokomotive der Mariazeller Bahn, Rh 1099-02",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": null,
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111474",
+    "Alte Objekt-ID": "129308",
+    "Katalogtitel": "2 Arbeiterwohnhäuser",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Wohnbauten",
+    "Hauptkategorie fein": "Arbeiter-/Angestelltenwohnhaus",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Gosau"
+    ],
+    "Katastralgemeinde": [
+      "42005 Gosau"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      null
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Gosau",
+    "Hausnummer": "468",
+    "PLZ": "4824",
+    "Ort": "Gosau #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\7\\8\\CD\\BB\\78CDBBDC-AE47-48DA-8887-69204848131B",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "77689",
+    "Alte Objekt-ID": "91320",
+    "Katalogtitel": "2 Bildstöcke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Bildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Land",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Hall in Tirol"
+    ],
+    "Katastralgemeinde": [
+      "81021 Heiligkreuz II"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "20",
+      "74"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Innsbrucker Straße",
+    "Hausnummer": "",
+    "PLZ": "6060",
+    "Ort": "Hall in Tirol #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\7\\28\\D4\\D728D474-F992-4FA8-9ECD-A52E77D044AB",
+    "Gehört zu HERIS-ID": "3302",
+    "Gehört zu alter Objekt-ID": "2564",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "59994",
+    "Alte Objekt-ID": "71738",
+    "Katalogtitel": "2 Brücken-Galerien nach Schlossbachgraben-Brücke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Reith bei Seefeld"
+    ],
+    "Katastralgemeinde": [
+      "81117 Leithen"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "161"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\F\\46\\1A\\8F461A9B-41B6-4550-8F0D-73497D95AB07",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "81892",
+    "Alte Objekt-ID": "95687",
+    "Katalogtitel": "2 Brücken zw. Aufnahmsgebäude Reith u. Brücke Kaltwasserbad",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Reith bei Seefeld"
+    ],
+    "Katastralgemeinde": [
+      "81126 Reith"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "605"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\0\\D0\\6A\\A0D06A2F-A596-45AE-A12C-4AB71F713E20",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "81852",
+    "Alte Objekt-ID": "95646",
+    "Katalogtitel": "2 Brücken zw. Finstertalviadukt und Jaufentalbrücke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Zirl"
+    ],
+    "Katastralgemeinde": [
+      "81313 Zirl"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "3001"
+    ],
+    "Bauzeit von": "1913",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\A\\3E\\AE\\8A3EAE0C-EF24-432E-815D-30EA416C3C31",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "11760",
+    "Alte Objekt-ID": "7874",
+    "Katalogtitel": "2 Brücken zwischen Personentunnel Birkl und HS Seefeld-Playcastle",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Seefeld in Tirol"
+    ],
+    "Katastralgemeinde": [
+      "81131 Seefeld"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "657, 658"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\3\\21\\CC\\4321CC36-9232-11D5-AF94-0000F87751EF",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "24547",
+    "Alte Objekt-ID": "20948",
+    "Katalogtitel": "2 Brunnen bei der Oper",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Brunnen",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": "Historisches Zentrum von Wien",
+    "Eigentümerkategorie": "Bund",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Wien"
+    ],
+    "Katastralgemeinde": [
+      "01004 Innere Stadt"
+    ],
+    "Bezirk": [
+      "Wien(Stadt)"
+    ],
+    "Bundesland": [
+      "Wien"
+    ],
+    "Grundstücksnummern": [
+      "1180/2, 1180/3"
+    ],
+    "Bauzeit von": "1867",
+    "Bauzeit bis": "1868",
+    "Publiziert": "Ja",
+    "Straße": "Opernring",
+    "Hausnummer": "2",
+    "PLZ": "1010",
+    "Ort": "Wien (Innere Stadt)",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\B\\9\\51\\0F\\B9510FB0-A8FF-11D6-8FF4-0080C8E833DB",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "16.36886",
+    "Latitude": "48.20276"
+  },
+  {
+    "HERIS-ID": "111672",
+    "Alte Objekt-ID": "129661",
+    "Katalogtitel": "2 Einsteigtürme (102, 103), Kanalbrücke Nagelberg",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Eichgraben"
+    ],
+    "Katastralgemeinde": [
+      "19710 Eichgraben"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1937",
+      "420",
+      "61",
+      "62/58, 62/97",
+      "62/84"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\D\\14\\5A\\8D145A89-329C-44BA-BCD3-1C5936704A42",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111682",
+    "Alte Objekt-ID": "129671",
+    "Katalogtitel": "2 Einsteigtürme (111, 114), Kanalbrücke Beerwartberg, Ein- und Auslaufkammer Wolfsgrabendüker (EK 112, AK 113)",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Nebenkategorie mittel": "Wasserbau/Schifffahrt",
+    "Nebenkategorie fein": "Gewässerdurchlass",
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Wolfsgraben"
+    ],
+    "Katastralgemeinde": [
+      "01909 Wolfsgraben"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "108",
+      "133/15",
+      "24/9",
+      "61/110",
+      "61/111"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\C\\3\\1C\\2A\\C31C2A34-32AD-406B-96BE-002B272262D1",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111664",
+    "Alte Objekt-ID": "129653",
+    "Katalogtitel": "2 Einsteigtürme (94, 95)",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Neulengbach"
+    ],
+    "Katastralgemeinde": [
+      "19747 St. Christophen"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1107/1",
+      "1521/2"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\1\\93\\0C\\D1930C76-6816-4B16-B1E8-7539DC0DD3A5",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111620",
+    "Alte Objekt-ID": "129609",
+    "Katalogtitel": "2 Einstiegstürme (69, 70), 5 Kanalbrücken, Einlaufkammer Pielachdüker (EK 71)",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Nebenkategorie mittel": "Wasserbau/Schifffahrt",
+    "Nebenkategorie fein": "Gewässerdurchlass",
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Hofstetten-Grünau"
+    ],
+    "Katastralgemeinde": [
+      "19204 Grünsbach"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1063",
+      "1064",
+      "1145",
+      "1163/1",
+      "788/2",
+      "878/6, 880/4",
+      "878/8",
+      "883/3",
+      "950/2",
+      "951/3, 951/2",
+      "984/1",
+      "989/3"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\C\\A\\F0\\64\\CAF0643B-F59F-48F7-B5AB-024AE5F268C3",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "49292",
+    "Alte Objekt-ID": "52936",
+    "Katalogtitel": "2 Fabriksgebäude, ehem. Waagner-Biró Werke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "allgemeine Produktion",
+    "Hauptkategorie fein": "Fabriksgebäude",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Wien"
+    ],
+    "Katastralgemeinde": [
+      "01658 Hirschstetten"
+    ],
+    "Bezirk": [
+      "Wien(Stadt)"
+    ],
+    "Bundesland": [
+      "Wien"
+    ],
+    "Grundstücksnummern": [
+      "168/2",
+      null
+    ],
+    "Bauzeit von": "1903",
+    "Bauzeit bis": "1904",
+    "Publiziert": "Nein",
+    "Straße": "Erzherzog-Karl-Straße",
+    "Hausnummer": "127",
+    "PLZ": "1220",
+    "Ort": "Wien (Donaustadt)",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": [
+      "Stadlauer Straße 54 1220 Wien (Donaustadt) "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\3\\BD\\37\\43BD37D0-4F12-41EB-AE4F-8F05D5DCA013",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "16.45469",
+    "Latitude": "48.22963"
+  },
+  {
+    "HERIS-ID": "99052",
+    "Alte Objekt-ID": "115070",
+    "Katalogtitel": "2 Figurenbildstöcke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Figurenbildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Laßnitzhöhe"
+    ],
+    "Katastralgemeinde": [
+      "63250 Laßnitzhöhe"
+    ],
+    "Bezirk": [
+      "Graz-Umgebung"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "230/4"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Kapellenstraße",
+    "Hausnummer": "19",
+    "PLZ": "8301",
+    "Ort": "Laßnitzhöhe",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\3\\A\\83\\F9\\3A83F973-BE26-4556-934F-981B0356DBB4",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "15.57625",
+    "Latitude": "47.07620"
+  },
+  {
+    "HERIS-ID": "30440",
+    "Alte Objekt-ID": "27185",
+    "Katalogtitel": "2 Figurenbildstöcke bei der Parisermühle",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Figurenbildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Trausdorf an der Wulka"
+    ],
+    "Katastralgemeinde": [
+      "30025 Trausdorf an der Wulka"
+    ],
+    "Bezirk": [
+      "Eisenstadt-Umgebung"
+    ],
+    "Bundesland": [
+      "Burgenland"
+    ],
+    "Grundstücksnummern": [
+      "694"
+    ],
+    "Bauzeit von": "1701",
+    "Bauzeit bis": "1702",
+    "Publiziert": "Ja",
+    "Straße": "Mühlau",
+    "Hausnummer": "16",
+    "PLZ": "7061",
+    "Ort": "Trausdorf an der Wulka",
+    "Zusatztext aus Adresse": "nördlich",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\6\\9\\8B\\4F\\698B4F70-77DC-4803-A8C7-545227C09155",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "16.54328",
+    "Latitude": "47.81224"
+  },
+  {
+    "HERIS-ID": "77063",
+    "Alte Objekt-ID": "90666",
+    "Katalogtitel": "2 Figurenbildstöcke, hll. Johannes Nepomuk und Josef",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Figurenbildstock",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Feststellungsbescheid §2 positiv)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Langenlois"
+    ],
+    "Katastralgemeinde": [
+      "12233 Zöbing"
+    ],
+    "Bezirk": [
+      "Krems(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      ".43"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Pfarrplatz",
+    "Hausnummer": "6",
+    "PLZ": "3561",
+    "Ort": "Langenlois (Zöbing)",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\1\\35\\70\\413570B2-D404-494E-8BC9-F4EC87586324",
+    "Gehört zu HERIS-ID": "595",
+    "Gehört zu alter Objekt-ID": "4035",
+    "Longitude": "15.69563",
+    "Latitude": "48.49215"
+  },
+  {
+    "HERIS-ID": "40658",
+    "Alte Objekt-ID": "40650",
+    "Katalogtitel": "2 Garagen, Schuppen u. Nebengebäude",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Straße/Verkehr",
+    "Hauptkategorie fein": "Garage",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Bund",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Neuberg an der Mürz"
+    ],
+    "Katastralgemeinde": [
+      "60518 Neuberg"
+    ],
+    "Bezirk": [
+      "Bruck-Mürzzuschlag"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "1/1, 1/2, 2/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\F\\E\\B3\\91\\FEB39103-069B-4EC3-B769-11823581555B",
+    "Gehört zu HERIS-ID": "2195",
+    "Gehört zu alter Objekt-ID": "528",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "82206",
+    "Alte Objekt-ID": "96020",
+    "Katalogtitel": "2 Häuslefresken und wandfeste Ausstattung Gasthaus Weißes Kreuz",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "wandfeste Ausstattung",
+    "Hauptkategorie fein": "Wandmalerei",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Ja",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Feldkirch"
+    ],
+    "Katastralgemeinde": [
+      "92102 Altenstadt"
+    ],
+    "Bezirk": [
+      "Feldkirch"
+    ],
+    "Bundesland": [
+      "Vorarlberg"
+    ],
+    "Grundstücksnummern": [
+      "34/1"
+    ],
+    "Bauzeit von": "1947",
+    "Bauzeit bis": "1966",
+    "Publiziert": "Ja",
+    "Straße": "Königshofstraße",
+    "Hausnummer": "2",
+    "PLZ": "6800",
+    "Ort": "Feldkirch",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\3\\CA\\BC\\D3CABC0F-9C89-4687-ACB1-08C85D57D19F",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "9.61560",
+    "Latitude": "47.26165"
+  },
+  {
+    "HERIS-ID": "111480",
+    "Alte Objekt-ID": "129314",
+    "Katalogtitel": "2 Holzhütten",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "landwirtschaftliche Bauten",
+    "Hauptkategorie fein": "Sonstige bäuerliche Bauten",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Gosau"
+    ],
+    "Katastralgemeinde": [
+      "42005 Gosau"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1009/3",
+      ".218/5"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Gosau",
+    "Hausnummer": "735",
+    "PLZ": "4824",
+    "Ort": "Gosau #MIG-H#",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\0\\9\\41\\78\\09417837-2ED9-439C-BBCD-6B07259672EC",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "81938",
+    "Alte Objekt-ID": "95733",
+    "Katalogtitel": "2 Isarviadukte beiderseits der Isarbrücke",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Viadukt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Scharnitz"
+    ],
+    "Katastralgemeinde": [
+      "81127 Scharnitz"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "897, 898/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\2\\9\\3D\\BA\\293DBA2E-A215-4F69-B160-58587664D14E",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111657",
+    "Alte Objekt-ID": "129646",
+    "Katalogtitel": "2 Kanalbrücken (Dörfl 1, 2), Einsteigturm 91",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kasten bei Böheimkirchen"
+    ],
+    "Katastralgemeinde": [
+      "19425 Dörfl bei Kasten"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "70",
+      "73",
+      "76/1",
+      "81/1"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\B\\9\\7F\\89\\B97F896C-47BE-468C-8BB6-43952C791FE0",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111625",
+    "Alte Objekt-ID": "129614",
+    "Katalogtitel": "2 Kanalbrücken (Mühlhofen 1 und 2)",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Weinburg"
+    ],
+    "Katastralgemeinde": [
+      "19529 Mühlhofen"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "123/1",
+      "127/1, 126/1"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\9\\7E\\E7\\597EE792-FFC4-47FC-BEA7-40C2356A8713",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111652",
+    "Alte Objekt-ID": "129641",
+    "Katalogtitel": "2 Kanalbrücken (Nützling 1, 2), Einsteigturm 87",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Pyhra"
+    ],
+    "Katastralgemeinde": [
+      "19534 Nützling"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "236/1, 243, 242",
+      "241",
+      "244"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\0\\3\\43\\68\\03436886-AA84-4E0A-9F7A-EE7B96FF18F8",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "45742",
+    "Alte Objekt-ID": "47162",
+    "Katalogtitel": "2 Keller des ehem. Bauernhofes",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "landwirtschaftliche Bauten",
+    "Hauptkategorie fein": "Bauernhof (Anlage)",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Sandl"
+    ],
+    "Katastralgemeinde": [
+      "41022 Sandl"
+    ],
+    "Bezirk": [
+      "Freistadt"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "231/16"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Sandl",
+    "Hausnummer": "28",
+    "PLZ": "4251",
+    "Ort": "Sandl",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\9\\1\\69\\15\\916915E5-C26F-48C0-8BD8-3EF7DF897DD6",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "14.64595",
+    "Latitude": "48.55964"
+  },
+  {
+    "HERIS-ID": "34564",
+    "Alte Objekt-ID": "32900",
+    "Katalogtitel": "2 Kioske und WC-Anlage",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Straße/Verkehr",
+    "Hauptkategorie fein": "Stadtmöblierung",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Mödling"
+    ],
+    "Katastralgemeinde": [
+      "16119 Mödling"
+    ],
+    "Bezirk": [
+      "Mödling"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      null
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Endstelle d.Straßenbahn 360",
+    "Hausnummer": "",
+    "PLZ": "2340",
+    "Ort": "Mödling #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\3\\B\\9A\\B6\\3B9AB6A9-8BE0-4DB3-9413-7E194A9D75A6",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "38750",
+    "Alte Objekt-ID": "38346",
+    "Katalogtitel": "2. Kreuzwegkapelle",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Traunkirchen"
+    ],
+    "Katastralgemeinde": [
+      "42161 Traunkirchen"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "127/13"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Kalvarienberg",
+    "Hausnummer": "",
+    "PLZ": "4801",
+    "Ort": "Traunkirchen #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\2\\B8\\13\\52B8131F-D619-41A5-BB96-89A112D43B15",
+    "Gehört zu HERIS-ID": "1311",
+    "Gehört zu alter Objekt-ID": "4731",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "104699",
+    "Alte Objekt-ID": "121570",
+    "Katalogtitel": "2 Kreuzwegstationen",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Gosau"
+    ],
+    "Katastralgemeinde": [
+      "42005 Gosau"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "410/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\0\\F5\\E5\\A0F5E52F-518C-4612-9C4F-7ADCF3B33F2F",
+    "Gehört zu HERIS-ID": "1267",
+    "Gehört zu alter Objekt-ID": "5835",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "58719",
+    "Alte Objekt-ID": "69514",
+    "Katalogtitel": "2 Lokhallen am Südbahnhof",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": null,
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz aufgehoben",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Wien"
+    ],
+    "Katastralgemeinde": [
+      "01101 Favoriten"
+    ],
+    "Bezirk": [
+      "Wien(Stadt)"
+    ],
+    "Bundesland": [
+      "Wien"
+    ],
+    "Grundstücksnummern": [
+      "138, 141"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Südbahnhof",
+    "Hausnummer": "",
+    "PLZ": "1100",
+    "Ort": "Wien 10 - Favoriten #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\6\\D\\10\\82\\6D1082CA-1EDA-45AC-ABD6-F417D9F62D5D",
+    "Gehört zu HERIS-ID": "707",
+    "Gehört zu alter Objekt-ID": "190",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "39762",
+    "Alte Objekt-ID": "39594",
+    "Katalogtitel": "2 Marmorportale des ehem. Erholungsheimes",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Kultur/Gesundheit/Unterricht",
+    "Hauptkategorie fein": "Kuranstalt/Sanatorium",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Land",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kössen"
+    ],
+    "Katastralgemeinde": [
+      "82109 Kössen"
+    ],
+    "Bezirk": [
+      "Kitzbühel"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      ".376/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Kössen",
+    "Hausnummer": "197",
+    "PLZ": "6345",
+    "Ort": "Kössen",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\0\\46\\D5\\4046D527-9442-4E8F-9DA1-275E50A6C9C4",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "112832",
+    "Alte Objekt-ID": "131054",
+    "Katalogtitel": "2 Möbel, Schrank im englischen Stil und Rollladenschreibtisch",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Möbel",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\D\\63\\D4\\ED63D484-6C08-4452-8765-DA366882A8E8",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "39670",
+    "Alte Objekt-ID": "39443",
+    "Katalogtitel": "2 Obelisken",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Gartenbaudenkmäler",
+    "Hauptkategorie fein": "Skulptur",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Innsbruck"
+    ],
+    "Katastralgemeinde": [
+      "81136 Wilten"
+    ],
+    "Bezirk": [
+      "Innsbruck-Stadt"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "1306/2"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": "1838",
+    "Publiziert": "Ja",
+    "Straße": "Bergisel",
+    "Hausnummer": "",
+    "PLZ": "6020",
+    "Ort": "Innsbruck (Statutarstadt) #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\0\\D\\F2\\36\\0DF236C6-50B2-49FA-B48F-D207C0088CDD",
+    "Gehört zu HERIS-ID": "3438",
+    "Gehört zu alter Objekt-ID": "3456",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "45787",
+    "Alte Objekt-ID": "47225",
+    "Katalogtitel": "2 Personalwohnhäuser rechts und links der Bahn",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": null,
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "mangelnde Denkmalqualität",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Bruck an der Mur"
+    ],
+    "Katastralgemeinde": [
+      "60072 Wienervorstadt"
+    ],
+    "Bezirk": [
+      "Bruck-Mürzzuschlag"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      "54"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Bahnhofstraße",
+    "Hausnummer": "22",
+    "PLZ": "8600",
+    "Ort": "Bruck an der Mur (Wiener Vorstadt)",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\8\\A2\\03\\58A203BC-136F-4880-B9BC-38819DE2C1AE",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "15.27903",
+    "Latitude": "47.41349"
+  },
+  {
+    "HERIS-ID": "95690",
+    "Alte Objekt-ID": "111054",
+    "Katalogtitel": "2 Portalpfeiler",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Sonstige Kleindenkmale",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Linz"
+    ],
+    "Katastralgemeinde": [
+      "45203 Linz"
+    ],
+    "Bezirk": [
+      "Stadt Linz"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "3039"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Lustenauer Straße",
+    "Hausnummer": "18 (Wohnhaus)",
+    "PLZ": "4020",
+    "Ort": "Linz",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": [
+      "Lustenauer Straße  4020 Linz (Statutarstadt) #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\D\\17\\5D\\ED175DFB-33F1-4FA0-85DE-A174EE645EB4",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "14.29736",
+    "Latitude": "48.30075"
+  },
+  {
+    "HERIS-ID": "84917",
+    "Alte Objekt-ID": "99079",
+    "Katalogtitel": "2 Putti",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Gartenbaudenkmäler",
+    "Hauptkategorie fein": "Skulptur",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Gutenberg-Stenzengreith"
+    ],
+    "Katastralgemeinde": [
+      "68215 Garrach"
+    ],
+    "Bezirk": [
+      "Weiz"
+    ],
+    "Bundesland": [
+      "Steiermark"
+    ],
+    "Grundstücksnummern": [
+      ".38/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Garrach",
+    "Hausnummer": "",
+    "PLZ": "8160",
+    "Ort": "Gutenberg an der Raabklamm #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\2\\0\\D8\\89\\20D8898C-D728-4866-8713-AE421C562F14",
+    "Gehört zu HERIS-ID": "2935",
+    "Gehört zu alter Objekt-ID": "3359",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "66010",
+    "Alte Objekt-ID": "78880",
+    "Katalogtitel": "2 römische sowie 1 barocker Grabstein",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "Friedhöfe/Begräbnisplätze",
+    "Hauptkategorie fein": "Grabstein/Grabplatte",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Ebreichsdorf"
+    ],
+    "Katastralgemeinde": [
+      "04102 Ebreichsdorf"
+    ],
+    "Bezirk": [
+      "Baden"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "487"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Schloßplatz",
+    "Hausnummer": "1",
+    "PLZ": "2483",
+    "Ort": "Ebreichsdorf",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\A\\75\\D3\\5A75D348-D3B6-401C-9249-37D297259556",
+    "Gehört zu HERIS-ID": "306",
+    "Gehört zu alter Objekt-ID": "1596",
+    "Longitude": "16.39712",
+    "Latitude": "47.96307"
+  },
+  {
+    "HERIS-ID": "244335",
+    "Alte Objekt-ID": null,
+    "Katalogtitel": "2 Schlieren-Waggons (Personenwagen), Bp 50 81 2935 139-3 (Hersteller SGP-Simmering)  Bpz 50 81 2935 417-3",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
+    "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
+    "Hauptkategorie fein": "Fahrzeug",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Bahnhofsplatz",
+    "Hausnummer": "10",
+    "PLZ": "9900",
+    "Ort": "Lienz",
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": null,
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "12.77144",
+    "Latitude": "46.82765"
+  },
+  {
+    "HERIS-ID": "59447",
+    "Alte Objekt-ID": "70745",
+    "Katalogtitel": "2 Tunnelportale der Südbahnstrecke Wien-Spielfeld Straß/ Traiskirchener Tunnel",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Tunnel",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Traiskirchen"
+    ],
+    "Katastralgemeinde": [
+      "04033 Traiskirchen"
+    ],
+    "Bezirk": [
+      "Baden"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "687/13"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\2\\40\\91\\A2409136-93FD-4278-8D87-3D8D5F1833E2",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "69137",
+    "Alte Objekt-ID": "82183",
+    "Katalogtitel": "2. und 4. Kreuzwegstation",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige sakrale Anlagen",
+    "Hauptkategorie fein": "Kalvarienberg/Kreuzweg",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Kirche",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Bad Goisern am Hallstättersee"
+    ],
+    "Katastralgemeinde": [
+      "42022 Untersee"
+    ],
+    "Bezirk": [
+      "Gmunden"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      ".179/1",
+      "380/3"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Edt",
+    "Hausnummer": "18",
+    "PLZ": "4822",
+    "Ort": "Bad Goisern am Hallstättersee (Edt)",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": [
+      "Edt  4822 Bad Goisern #MIG-N# ",
+      "Stambach  4822 Bad Goisern #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\D\\1\\F9\\B3\\D1F9B3E0-ED39-4C88-89A5-38865CFC2DE1",
+    "Gehört zu HERIS-ID": "1290",
+    "Gehört zu alter Objekt-ID": "1971",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "62405",
+    "Alte Objekt-ID": "74944",
+    "Katalogtitel": "2 Wassergräben",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Schlösser/Burgen/Palais",
+    "Hauptkategorie fein": "Burgruine",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "mangelnde Denkmalqualität",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kirchdorf am Inn"
+    ],
+    "Katastralgemeinde": [
+      "46016 Kirchdorf am Inn"
+    ],
+    "Bezirk": [
+      "Ried"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "???"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Graben",
+    "Hausnummer": "",
+    "PLZ": "4943",
+    "Ort": "Kirchdorf am Inn #MIG-H#",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\0\\B0\\D3\\E0B0D354-DA4E-42F7-942B-8370AF20D9D0",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "78453",
+    "Alte Objekt-ID": "92114",
+    "Katalogtitel": "2 Wasserwerke und Brunnen beim Jägermayerhof",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Energie/Versorgung",
+    "Hauptkategorie fein": "Wasserwerk",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz prüfen",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Linz"
+    ],
+    "Katastralgemeinde": [
+      "45210 Waldegg"
+    ],
+    "Bezirk": [
+      "Stadt Linz"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1000/1",
+      "988 nicht in VO!"
+    ],
+    "Bauzeit von": "1912",
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Römerstraße",
+    "Hausnummer": "98",
+    "PLZ": "4020",
+    "Ort": "Linz",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\6\\3\\41\\F0\\6341F0B9-4AE0-47DA-A0A3-382D64DBA6BE",
+    "Gehört zu HERIS-ID": "1435",
+    "Gehört zu alter Objekt-ID": "3972",
+    "Longitude": "14.26651",
+    "Latitude": "48.30203"
+  },
+  {
+    "HERIS-ID": "110567",
+    "Alte Objekt-ID": "128273",
+    "Katalogtitel": "2 Wirtschaftsgebäude",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "landwirtschaftliche Bauten",
+    "Hauptkategorie fein": "Sonstige bäuerliche Bauten",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Kirche",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Lauterach"
+    ],
+    "Katastralgemeinde": [
+      "91116 Lauterach"
+    ],
+    "Bezirk": [
+      "Bregenz"
+    ],
+    "Bundesland": [
+      "Vorarlberg"
+    ],
+    "Grundstücksnummern": [
+      ".212, .213/2"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Lerchenauerstraße",
+    "Hausnummer": "80",
+    "PLZ": "6923",
+    "Ort": "Lauterach",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\B\\F\\A3\\21\\BFA3210A-6E3B-4F76-A0F6-C6102A53CF32",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "9.70778",
+    "Latitude": "47.47656"
+  },
+  {
+    "HERIS-ID": "110758",
+    "Alte Objekt-ID": "128479",
+    "Katalogtitel": "2 Wirtschaftsgebäude beim evang. Pfarrhaus",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "landwirtschaftliche Bauten",
+    "Hauptkategorie fein": "Wirtschaftsgebäude",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Kirche",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Großpetersdorf"
+    ],
+    "Katastralgemeinde": [
+      "34024 Großpetersdorf"
+    ],
+    "Bezirk": [
+      "Oberwart"
+    ],
+    "Bundesland": [
+      "Burgenland"
+    ],
+    "Grundstücksnummern": [
+      "1075"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Blumentalstraße",
+    "Hausnummer": "28",
+    "PLZ": "7503",
+    "Ort": "Großpetersdorf",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\5\\C5\\06\\A5C5069C-4CDC-446D-A1B6-FCC5F9EE97B1",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "16.32063",
+    "Latitude": "47.24136"
+  },
+  {
+    "HERIS-ID": "112142",
+    "Alte Objekt-ID": "130196",
+    "Katalogtitel": "2 Wirtschaftsgebäude des Pfarrhofs",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "sakrale Bauten",
+    "Hauptkategorie mittel": "sonstige kirchliche Bauten",
+    "Hauptkategorie fein": "Pfarrhof",
+    "Nebenkategorie grob": "Profanbauten",
+    "Nebenkategorie mittel": "landwirtschaftliche Bauten",
+    "Nebenkategorie fein": "Wirtschaftsgebäude",
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Feststellungsbescheid §2 positiv)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Kirche",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Trausdorf an der Wulka"
+    ],
+    "Katastralgemeinde": [
+      "30025 Trausdorf an der Wulka"
+    ],
+    "Bezirk": [
+      "Eisenstadt-Umgebung"
+    ],
+    "Bundesland": [
+      "Burgenland"
+    ],
+    "Grundstücksnummern": [
+      "70"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "DDr. Stefan Laszlo-Platz",
+    "Hausnummer": "1",
+    "PLZ": "7061",
+    "Ort": "Trausdorf an der Wulka",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\C\\D\\B0\\35\\CDB0353F-3AEB-436A-BA9B-EB8E6037304B",
+    "Gehört zu HERIS-ID": "1094",
+    "Gehört zu alter Objekt-ID": "6222",
+    "Longitude": "16.55764",
+    "Latitude": "47.81395"
+  },
+  {
+    "HERIS-ID": "103328",
+    "Alte Objekt-ID": "119804",
+    "Katalogtitel": "2 Wohnhäuser",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Wohnbauten",
+    "Hauptkategorie fein": "Wohnhaus",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "mangelnde Denkmalqualität",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Linz"
+    ],
+    "Katastralgemeinde": [
+      "45204 Lustenau"
+    ],
+    "Bezirk": [
+      "Stadt Linz"
+    ],
+    "Bundesland": [
+      "Oberösterreich"
+    ],
+    "Grundstücksnummern": [
+      "798/52, 798/53"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Prinz-Eugen-Straße",
+    "Hausnummer": "10",
+    "PLZ": "4020",
+    "Ort": "Linz",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\D\\63\\3A\\AD633A1B-2954-472E-8C22-B9CC1762A0E0",
+    "Gehört zu HERIS-ID": "1452",
+    "Gehört zu alter Objekt-ID": "5769",
+    "Longitude": "14.30969",
+    "Latitude": "48.30039"
+  },
+  {
+    "HERIS-ID": "36443",
+    "Alte Objekt-ID": "35358",
+    "Katalogtitel": "2 Wohnobjekte (östl. Tor)",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Wohnbauten",
+    "Hauptkategorie fein": "Wohnhaus",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Negativer §2-Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Gemeinde",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Mödling"
+    ],
+    "Katastralgemeinde": [
+      "16119 Mödling"
+    ],
+    "Bezirk": [
+      "Mödling"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "(611,) 1407/1"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": "Guntramsdorfer Straße",
+    "Hausnummer": "30",
+    "PLZ": "2340",
+    "Ort": "Mödling",
+    "Zusatztext aus Adresse": "",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\1\\E\\80\\F6\\1E80F624-A66A-4111-91F0-24F901F010A3",
+    "Gehört zu HERIS-ID": "776",
+    "Gehört zu alter Objekt-ID": "5754",
+    "Longitude": "16.30057",
+    "Latitude": "48.07091"
+  },
+  {
+    "HERIS-ID": "58931",
+    "Alte Objekt-ID": "69826",
+    "Katalogtitel": "38 Kleinställe Alpe Dias",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "landwirtschaftliche Bauten",
+    "Hauptkategorie fein": "Almanlage",
+    "Nebenkategorie grob": "Profanbauten",
+    "Nebenkategorie mittel": "landwirtschaftliche Bauten",
+    "Nebenkategorie fein": "Stall",
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kappl"
+    ],
+    "Katastralgemeinde": [
+      "84006 Kappl"
+    ],
+    "Bezirk": [
+      "Landeck"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "7522/2, .1598, .1599, .1600, .1601, .1602, .1603, .1604, .1605/1, .1605/2, .1606, .1607, .1608, .1610, .1611, .1613 , .1614, .1615, .1616, .1617, .1619, .1620, .1621, .1623, .1624, .2205, .2206, .2207, .2208, .2209, .2210, .2211, .2212, .2213, .2214, .2215"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Dias",
+    "Hausnummer": "(Alte Alpe Dias)",
+    "PLZ": "6555",
+    "Ort": "Kappl",
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": [
+      "Dias  6555 Kappl #MIG-H# "
+    ],
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\1\\0\\D7\\21\\10D721BC-6627-40B1-B919-68172D9C2C58",
+    "Gehört zu HERIS-ID": "3799",
+    "Gehört zu alter Objekt-ID": "3635",
+    "Longitude": "10.35614",
+    "Latitude": "47.06871"
+  },
+  {
+    "HERIS-ID": "28011",
+    "Alte Objekt-ID": "24561",
+    "Katalogtitel": "3 Blocksteine",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Profanbauten",
+    "Hauptkategorie mittel": "Erinnerungs/Kleindenkmäler",
+    "Hauptkategorie fein": "Sonstige Kleindenkmale",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Unternberg"
+    ],
+    "Katastralgemeinde": [
+      "58032 Unternberg"
+    ],
+    "Bezirk": [
+      "Tamsweg"
+    ],
+    "Bundesland": [
+      "Salzburg"
+    ],
+    "Grundstücksnummern": [
+      "524"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Neustatt",
+    "Hausnummer": "38",
+    "PLZ": "5585",
+    "Ort": "Unternberg",
+    "Zusatztext aus Adresse": "bei",
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\A\\7B\\0E\\EA7B0E13-A297-41A5-B533-2026AB20E811",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": "13.74560",
+    "Latitude": "47.10982"
+  },
+  {
+    "HERIS-ID": "84604",
+    "Alte Objekt-ID": "98733",
+    "Katalogtitel": "3 Brücken über den Mistelbach",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Straße/Verkehr",
+    "Hauptkategorie fein": "Straßenbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Verordnung",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Land",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Mistelbach"
+    ],
+    "Katastralgemeinde": [
+      "15039 Siebenhirten"
+    ],
+    "Bezirk": [
+      "Mistelbach"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "2123/1, 2145/1",
+      "2163/3",
+      null
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\5\\F\\E9\\03\\5FE903FC-B13F-48F7-AEC2-F2C5B99DD5D3",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "11761",
+    "Alte Objekt-ID": "7875",
+    "Katalogtitel": "3 Brücken vor Brücke Hartlesklammbach",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Scharnitz"
+    ],
+    "Katastralgemeinde": [
+      "81127 Scharnitz"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "896"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\4\\3\\21\\CC\\4321CC37-9232-11D5-AF94-0000F87751EF",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "59993",
+    "Alte Objekt-ID": "71737",
+    "Katalogtitel": "3 Brücken vor Rottenunterkunft Martinswand",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Zirl"
+    ],
+    "Katastralgemeinde": [
+      "81313 Zirl"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "3001"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\E\\6\\56\\29\\E6562924-1906-456C-BC23-CC7503C9D89E",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "81856",
+    "Alte Objekt-ID": "95650",
+    "Katalogtitel": "3 Brücken zw. Brücke Wasserstollen u. Rottenunterkunft Hochzirl",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Zirl"
+    ],
+    "Katastralgemeinde": [
+      "81313 Zirl"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "3006"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\7\\8\\F1\\69\\78F1695C-EB7E-4706-873B-4D706BCAC374",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "81937",
+    "Alte Objekt-ID": "95732",
+    "Katalogtitel": "3 Brücken zw. Gießenbachbrücke und Isarviadukt",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Scharnitz"
+    ],
+    "Katastralgemeinde": [
+      "81127 Scharnitz"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "897"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\2\\F2\\40\\82F24049-0800-4973-A21F-9B1763225502",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "81930",
+    "Alte Objekt-ID": "95725",
+    "Katalogtitel": "3 Brücken zw. HS Seefeld-Playcastle u. Brücke Reiserichgraben",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Eisenbahn/Verkehr",
+    "Hauptkategorie fein": "Eisenbahnbrücke",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Privat",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Seefeld in Tirol"
+    ],
+    "Katastralgemeinde": [
+      "81131 Seefeld"
+    ],
+    "Bezirk": [
+      "Innsbruck-Land"
+    ],
+    "Bundesland": [
+      "Tirol"
+    ],
+    "Grundstücksnummern": [
+      "658"
+    ],
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\B\\9\\2B\\78\\B92B785F-F944-4741-B858-2E7D45F50C92",
+    "Gehört zu HERIS-ID": "3959",
+    "Gehört zu alter Objekt-ID": "3040",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111678",
+    "Alte Objekt-ID": "129667",
+    "Katalogtitel": "3 Einsteigtürme (105, 109, 110), Ein- und Auslaufkammer Dürrwiendüker (EK 106, AK 107), Zugangsstollen 108",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Nebenkategorie mittel": "Wasserbau/Schifffahrt",
+    "Nebenkategorie fein": "Gewässerdurchlass",
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Pressbaum"
+    ],
+    "Katastralgemeinde": [
+      "01905 Preßbaum"
+    ],
+    "Bezirk": [
+      "Sankt Pölten(Land)"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "182/2",
+      "182/28",
+      "182/6",
+      "217/8",
+      "245/26",
+      "315/16",
+      "322/15"
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\C\\C\\0A\\79\\CC0A79FA-9ACD-42F6-A481-7FD4202ACCC5",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": null,
+    "Latitude": null
+  },
+  {
+    "HERIS-ID": "111613",
+    "Alte Objekt-ID": "129602",
+    "Katalogtitel": "3 Einsteigtürme (65, 66, 67), 2 Kanalbrücken (Hummelbach, Umbachkogel)",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Wasserbau/Schifffahrt",
+    "Hauptkategorie fein": "sonstige(r) Wasserbau/Schifffahrt",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": "Sonstige",
+    "Gemeinden politisch (lt. Katastralgemeinden)": [
+      "Kilb"
+    ],
+    "Katastralgemeinde": [
+      "14029 Kettenreith"
+    ],
+    "Bezirk": [
+      "Melk"
+    ],
+    "Bundesland": [
+      "Niederösterreich"
+    ],
+    "Grundstücksnummern": [
+      "1302",
+      "230/1, 231/2",
+      "238/3",
+      "612/9",
+      "759",
+      "784/2",
+      "785",
+      null
+    ],
+    "Bauzeit von": "1900",
+    "Bauzeit bis": null,
+    "Publiziert": "Ja",
+    "Straße": "Hummelbach",
+    "Hausnummer": "2",
+    "PLZ": "3233",
+    "Ort": "Kilb (Hummelbach)",
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\A\\7\\CF\\EB\\A7CFEB01-A643-4D9A-B171-00E38E76D5C7",
+    "Gehört zu HERIS-ID": "955",
+    "Gehört zu alter Objekt-ID": "1136",
+    "Longitude": "15.36592",
+    "Latitude": "48.07687"
+  },
+  {
+    "HERIS-ID": "113368",
+    "Alte Objekt-ID": "131683",
+    "Katalogtitel": "3 EVN-Kraftwerks-Maschinensätze",
+    "Typ": "Baudenkmal",
+    "Hauptkategorie grob": "Technik/Wirtschaft/Verkehr",
+    "Hauptkategorie mittel": "Maschinen",
+    "Hauptkategorie fein": "sonstige Maschinen",
+    "Nebenkategorie grob": null,
+    "Nebenkategorie mittel": null,
+    "Nebenkategorie fein": null,
+    "Denkmalschutzstatus": "Denkmalschutz per Bescheid (Unterschutzstellung §3)",
+    "Teilunterschutzgestellt": "Nein",
+    "Haager Konvention": "Nein",
+    "Weltkulturerbe": null,
+    "Eigentümerkategorie": null,
+    "Gemeinden politisch (lt. Katastralgemeinden)": null,
+    "Katastralgemeinde": null,
+    "Bezirk": null,
+    "Bundesland": null,
+    "Grundstücksnummern": null,
+    "Bauzeit von": null,
+    "Bauzeit bis": null,
+    "Publiziert": "Nein",
+    "Straße": null,
+    "Hausnummer": null,
+    "PLZ": null,
+    "Ort": null,
+    "Zusatztext aus Adresse": null,
+    "Weitere Adressen": null,
+    "Pfad zu weiteren Dokumenten": "\\\\bdafilep-fb00c.bda-p.local\\dmdb\\dmdb_docs\\8\\4\\E8\\CF\\84E8CF43-7406-4B78-94DC-90397EC2DC03",
+    "Gehört zu HERIS-ID": null,
+    "Gehört zu alter Objekt-ID": null,
+    "Longitude": null,
+    "Latitude": null
+  }
+]
