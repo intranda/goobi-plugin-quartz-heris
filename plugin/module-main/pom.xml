@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>de.intranda.goobi.plugins.rest</groupId>
-  <artifactId>sample-main</artifactId>
+  <groupId>de.intranda.goobi.plugins.quartz</groupId>
+  <artifactId>heris-main</artifactId>
   <version>1.0.0</version>
   <properties>
-    <jar.name>plugin_intranda_rest_sample</jar.name>
-    <dest.folder>/opt/digiverso/goobi/plugins/rest/</dest.folder>
+    <jar.name>plugin_intranda_quartz_heris</jar.name>
+    <dest.folder>/opt/digiverso/goobi/plugins/GUI/</dest.folder>
   </properties>
   <parent>
-    <groupId>de.intranda.goobi.plugins.rest</groupId>
-    <artifactId>sample</artifactId>
+    <groupId>de.intranda.goobi.plugins.quartz</groupId>
+    <artifactId>heris</artifactId>
     <version>1.0.0</version>
   </parent>
   <build>
@@ -21,8 +21,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>11</source>
+          <target>11</target>
         </configuration>
       </plugin>
       <plugin>

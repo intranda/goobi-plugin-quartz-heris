@@ -1,6 +1,6 @@
-package io.goobi.api.rest;
+package io.goobi.api.job;
 
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,9 +9,11 @@ import java.nio.file.Paths;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import io.goobi.api.job.HerisQuartzPlugin;
+
 //@RunWith(PowerMockRunner.class)
 //@PowerMockIgnore({ "javax.management.*", "javax.net.ssl.*" ,"jdk.internal.reflect.*"})
-public class SamplePluginTest {
+public class HerisQuartzPluginTest {
 
     private static String resourcesFolder;
 
@@ -29,8 +31,9 @@ public class SamplePluginTest {
     }
 
     @Test
-    public void testVersion() throws IOException {
-        String s = "xyz";
-        assertNotNull(s);
+    public void testTitle() throws IOException {
+        HerisQuartzPlugin job = new HerisQuartzPlugin();
+        assertEquals("HerisJob", job.getJobName());
+
     }
 }
