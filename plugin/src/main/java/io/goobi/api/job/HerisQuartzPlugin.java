@@ -1,18 +1,30 @@
 package io.goobi.api.job;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.HierarchicalConfiguration;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
 import org.goobi.production.flow.jobs.AbstractGoobiJob;
 import org.goobi.vocabulary.Definition;
+import org.goobi.vocabulary.Field;
 import org.goobi.vocabulary.VocabRecord;
 import org.goobi.vocabulary.Vocabulary;
 
+import com.jayway.jsonpath.Configuration;
+import com.jayway.jsonpath.JsonPath;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.ChannelSftp.LsEntry;
 import com.jcraft.jsch.JSch;
@@ -53,9 +65,16 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     @Setter
     private Path jsonFile;
 
+    @Getter
     private String vocabularyName;
+    @Getter
+    private Map<String, String> jsonMapping;
 
+    @Getter
     private Vocabulary vocabulary;
+
+    private String identifierVocabField;
+    private String identifierJsonField;
 
     @Override
     public void execute() {
@@ -83,6 +102,8 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     }
 
     public void parseConfiguration() {
+        jsonMapping = new HashMap<>();
+
         config = ConfigPlugins.getPluginConfig(getJobName());
         config.setExpressionEngine(new XPathExpressionEngine());
         config.setReloadingStrategy(new FileChangedReloadingStrategy());
@@ -97,6 +118,17 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
         vocabularyName = config.getString("/vocabulary/@name");
 
+        List<HierarchicalConfiguration> fields = config.configurationsAt("/vocabulary/field");
+        for (HierarchicalConfiguration hc : fields) {
+            jsonMapping.put(hc.getString("@fieldName"), hc.getString("@jsonPath"));
+            if (hc.getBoolean("@identifier", false)) {
+                identifierVocabField = hc.getString("@fieldName");
+                identifierJsonField = hc.getString("@jsonPath");
+            }
+        }
+
+        vocabulary = VocabularyManager.getVocabularyByTitle(vocabularyName);
+        VocabularyManager.getAllRecords(vocabulary);
     }
 
     private Path getLatestHerisFile() {
@@ -152,11 +184,79 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     }
 
     public void generateRecordsFromFile() {
-        vocabulary = VocabularyManager.getVocabularyByTitle(vocabularyName);
-        VocabularyManager.getAllRecords(vocabulary);
-        List<VocabRecord> existingRecords = vocabulary.getRecords();
 
-        List<Definition> structure = vocabulary.getStruct();
+        // open json file
+        try (InputStream is = new FileInputStream(jsonFile.toFile())) {
+            Object document = Configuration.defaultConfiguration().jsonProvider().parse(is, StandardCharsets.UTF_8.toString());
+            // split array into single objects
+            Object object = JsonPath.read(document, "$.*");
+            if (object instanceof List) {
+                List<?> records = (List<?>) object;
 
+                // parse metadata
+                for (Object jsonRecord : records) {
+                    parseRecord(jsonRecord);
+                }
+            }
+        } catch (IOException e) {
+            log.error(e);
+        }
+
+    }
+
+    private void parseRecord(Object jsonRecord) {
+        VocabRecord vocabRecord = null;
+
+        // get identifier field
+        String identifierValue = (String) JsonPath.read(jsonRecord, identifierJsonField);
+
+        vocabRecord = getRecord(identifierValue);
+
+        // add values to fields
+
+        for (Entry<String, String> entry : jsonMapping.entrySet()) {
+            String fieldName = entry.getKey();
+            String jsonPath = entry.getValue();
+
+            Field field = vocabRecord.getFieldByLabel(fieldName);
+            if (field != null) {
+                Object val = JsonPath.read(jsonRecord, jsonPath);
+                if (val != null) {
+                    String value = (String) val;
+                    field.setValue(value);
+                } else {
+                    field.setValue("");
+                }
+            }
+        }
+    }
+
+    private VocabRecord getRecord(String identifierValue) {
+        // check existing records, if identifier exists
+        VocabRecord vocabRecord = null;
+        for (VocabRecord vr : vocabulary.getRecords()) {
+            String recId = vr.getFieldByLabel(identifierVocabField).getValue();
+            if (identifierValue.equals(recId)) {
+                log.debug("found existing record for id {}", identifierValue);
+                vocabRecord = vr;
+                break;
+            }
+        }
+
+        // otherwise create a new record
+        if (vocabRecord == null) {
+            log.debug("create new record for id {}", identifierValue);
+            vocabRecord = new VocabRecord();
+            vocabRecord.setVocabularyId(vocabulary.getId());
+            vocabulary.getRecords().add(vocabRecord);
+
+            List<Field> fieldList = new ArrayList<>();
+            for (Definition definition : vocabulary.getStruct()) {
+                Field field = new Field(definition.getLabel(), definition.getLanguage(), "", definition);
+                fieldList.add(field);
+            }
+            vocabRecord.setFields(fieldList);
+        }
+        return vocabRecord;
     }
 }

@@ -17,8 +17,15 @@
     </sftp>
     
     
-    <vocabulary name="">
-        <field fieldName="" jsonPath="" />
-    
+    <vocabulary name="HERIS">
+        <field fieldName="herisid" jsonPath="$.['HERIS-ID']" identifier="true" />
+        <field fieldName="objektid" jsonPath="$.['Alte Objekt-ID']" />
+        <field fieldName="title" jsonPath="$.['Katalogtitel']" />
+        <field fieldName="type" jsonPath="$.['Typ']" />
+        <field fieldName="mainCategoryA" jsonPath="$.['Hauptkategorie grob']" />
+        <field fieldName="mainCategoryB" jsonPath="$.['Hauptkategorie mittel']" />
+        <field fieldName="mainCategoryC" jsonPath="$.['Hauptkategorie fein']" />
+        <field fieldName="subCategory" jsonPath="$.['Nebenkategorie grob']" />
+        <field fieldName="nonExisting" jsonPath="$.['somethingElse']" />
     </vocabulary>
 </config>

@@ -79,6 +79,44 @@ public class HerisQuartzPluginTest {
         PowerMock.replay(VocabularyManager.class);
     }
 
+    @Test
+    public void testTitle() throws Exception {
+        HerisQuartzPlugin job = new HerisQuartzPlugin();
+        assertEquals("intranda_quartz_herisJob", job.getJobName());
+    }
+
+    @Test
+    public void testConfiguration() throws Exception {
+        HerisQuartzPlugin plugin = new HerisQuartzPlugin();
+
+        plugin.parseConfiguration();
+        assertEquals("/tmp/", plugin.getHerisFolder());
+        assertEquals(1, plugin.getLastRunMillis());
+        assertEquals("username", plugin.getUsername());
+        assertEquals("password", plugin.getPassword());
+        assertEquals("192.168.0.1", plugin.getHostname());
+        assertEquals("/home/user/.ssh/known_hosts", plugin.getKnownHosts());
+        assertEquals("/path/to/file", plugin.getFtpFolder());
+
+        assertEquals("HERIS", plugin.getVocabularyName());
+        assertEquals(9, plugin.getJsonMapping().size());
+    }
+
+    @Test
+    public void testReadJsonFile() throws Exception {
+        HerisQuartzPlugin plugin = new HerisQuartzPlugin();
+        plugin.parseConfiguration();
+
+        plugin.setJsonFile(jsonFile);
+        assertTrue(Files.exists(plugin.getJsonFile()));
+
+        assertEquals(1, plugin.getVocabulary().getRecords().size());
+
+        plugin.generateRecordsFromFile();
+
+        assertEquals(87, plugin.getVocabulary().getRecords().size());
+    }
+
     private Vocabulary prepareVocabulary() {
         Vocabulary vocabulary = new Vocabulary();
         vocabulary.setTitle("fixture");
@@ -105,52 +143,61 @@ public class HerisQuartzPluginTest {
         definitionList.add(subCategoryDefA);
         vocabulary.setStruct(definitionList);
 
+        // add sample record to test merging
         List<Field> fieldList = new ArrayList<>();
 
         //        "HERIS-ID": "112518",
         Field herisId = new Field();
+        herisId.setLabel(herisIdDef.getLabel());
         herisId.setDefinition(herisIdDef);
         herisId.setValue("112518");
         fieldList.add(herisId);
 
         //        "Alte Objekt-ID": "130724",
         Field objectId = new Field();
+        objectId.setLabel(objectIdDef.getLabel());
         objectId.setDefinition(objectIdDef);
         objectId.setValue("130724");
         fieldList.add(objectId);
 
         //        "Katalogtitel": "10 Fahrzeuge der Wiener Lokalbahn",
         Field title = new Field();
+        title.setLabel(titleDef.getLabel());
         title.setDefinition(titleDef);
         title.setValue("10 Fahrzeuge der Wiener Lokalbahn");
         fieldList.add(title);
 
         //        "Typ": "Baudenkmal",
         Field type = new Field();
+        type.setLabel(typeDef.getLabel());
         type.setDefinition(typeDef);
         type.setValue("Baudenkmal");
         fieldList.add(type);
 
         //        "Hauptkategorie grob": "Zubehör (bewegl/unbewegl.)",
         Field catA = new Field();
+        catA.setLabel(mainCategoryDefA.getLabel());
         catA.setDefinition(mainCategoryDefA);
         catA.setValue("Zubehör (bewegl/unbewegl.)");
         fieldList.add(catA);
 
         //        "Hauptkategorie mittel": "sonstiges mobiles Zubehör",
         Field catB = new Field();
+        catB.setLabel(mainCategoryDefB.getLabel());
         catB.setDefinition(mainCategoryDefB);
         catB.setValue("sonstiges mobiles Zubehör");
         fieldList.add(catB);
 
         //        "Hauptkategorie fein": "Fahrzeug",
         Field catC = new Field();
+        catC.setLabel(mainCategoryDefC.getLabel());
         catC.setDefinition(mainCategoryDefC);
         catC.setValue("Fahrzeug");
         fieldList.add(catC);
 
         //        "Nebenkategorie grob": null,
         Field sub = new Field();
+        sub.setLabel(subCategoryDefA.getLabel());
         sub.setDefinition(subCategoryDefA);
         sub.setValue(""); // null value is not allowed
         fieldList.add(sub);
@@ -159,39 +206,6 @@ public class HerisQuartzPluginTest {
         rec.setId(1);
         vocabulary.getRecords().add(rec);
 
-        // TODO add sample record
         return vocabulary;
-    }
-
-    @Test
-    public void testTitle() throws Exception {
-        HerisQuartzPlugin job = new HerisQuartzPlugin();
-        assertEquals("intranda_quartz_herisJob", job.getJobName());
-    }
-
-    @Test
-    public void testConfiguration() throws Exception {
-        HerisQuartzPlugin plugin = new HerisQuartzPlugin();
-
-        plugin.parseConfiguration();
-        assertEquals("/tmp/", plugin.getHerisFolder());
-        assertEquals(1, plugin.getLastRunMillis());
-        assertEquals("username", plugin.getUsername());
-        assertEquals("password", plugin.getPassword());
-        assertEquals("192.168.0.1", plugin.getHostname());
-        assertEquals("/home/user/.ssh/known_hosts", plugin.getKnownHosts());
-        assertEquals("/path/to/file", plugin.getFtpFolder());
-    }
-
-    @Test
-    public void testReadJsonFile() throws Exception {
-        HerisQuartzPlugin plugin = new HerisQuartzPlugin();
-        plugin.parseConfiguration();
-
-        plugin.setJsonFile(jsonFile);
-        assertTrue(Files.exists(plugin.getJsonFile()));
-
-        plugin.generateRecordsFromFile();
-
     }
 }
