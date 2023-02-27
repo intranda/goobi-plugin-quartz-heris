@@ -9,6 +9,9 @@ import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
 import org.goobi.production.flow.jobs.AbstractGoobiJob;
+import org.goobi.vocabulary.Definition;
+import org.goobi.vocabulary.VocabRecord;
+import org.goobi.vocabulary.Vocabulary;
 
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.ChannelSftp.LsEntry;
@@ -18,7 +21,9 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
 import de.sub.goobi.config.ConfigPlugins;
+import de.sub.goobi.persistence.managers.VocabularyManager;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
@@ -27,7 +32,6 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     private XMLConfiguration config;
 
     @Getter
-    // TODO replace it with sftp call
     private String herisFolder;
 
     @Getter
@@ -44,6 +48,14 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     private String password;
     @Getter
     private String ftpFolder;
+
+    @Getter
+    @Setter
+    private Path jsonFile;
+
+    private String vocabularyName;
+
+    private Vocabulary vocabulary;
 
     @Override
     public void execute() {
@@ -82,6 +94,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         hostname = config.getString("/sftp/hostname");
         knownHosts = config.getString("/sftp/knownHosts", System.getProperty("user.home").concat("/.ssh/known_hosts"));
         ftpFolder = config.getString("/sftp/sftpFolder");
+
+        vocabularyName = config.getString("/vocabulary/@name");
+
     }
 
     private Path getLatestHerisFile() {
@@ -99,7 +114,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
                 lsEntry.getAttrs().getATime();
             }
             // TODO download file into temp folder
-            Path destination = Paths.get("/tmp/", jsonFile);
+            Path destination = Paths.get(herisFolder, jsonFile);
             sftpChannel.get(jsonFile, destination.toString());
 
             // close connection
@@ -136,4 +151,12 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         }
     }
 
+    public void generateRecordsFromFile() {
+        vocabulary = VocabularyManager.getVocabularyByTitle(vocabularyName);
+        VocabularyManager.getAllRecords(vocabulary);
+        List<VocabRecord> existingRecords = vocabulary.getRecords();
+
+        List<Definition> structure = vocabulary.getStruct();
+
+    }
 }

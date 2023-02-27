@@ -15,4 +15,10 @@
         <knownHosts>/home/user/.ssh/known_hosts</knownHosts>
         <sftpFolder>/path/to/file</sftpFolder>
     </sftp>
+    
+    
+    <vocabulary name="">
+        <field fieldName="" jsonPath="" />
+    
+    </vocabulary>
 </config>
