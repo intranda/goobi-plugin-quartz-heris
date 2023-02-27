@@ -1,9 +1,18 @@
 <config>
     <!-- Folder in which the heris export file is expected to be stored -->
-	<herisFolder>/tmp/</herisFolder>
-    
+    <herisFolder>/tmp/</herisFolder>
+
     <!-- timestamp of the last run -->
     <!-- execute updates only, if the latest heris file is newer than the timestamp -->
     <lastrun>1</lastrun>
-    
+
+
+
+    <sftp>
+        <username>username</username>
+        <password>password</password>
+        <hostname>192.168.0.1</hostname>
+        <knownHosts>/home/user/.ssh/known_hosts</knownHosts>
+        <sftpFolder>/path/to/file</sftpFolder>
+    </sftp>
 </config>

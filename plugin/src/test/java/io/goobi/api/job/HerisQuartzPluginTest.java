@@ -66,6 +66,11 @@ public class HerisQuartzPluginTest {
 
         assertEquals("/tmp/", plugin.getHerisFolder());
         assertEquals(1, plugin.getLastRunMillis());
+        assertEquals("username", plugin.getUsername());
+        assertEquals("password", plugin.getPassword());
+        assertEquals("192.168.0.1", plugin.getHostname());
+        assertEquals("/home/user/.ssh/known_hosts", plugin.getKnownHosts());
+        assertEquals("/path/to/file", plugin.getFtpFolder());
 
     }
 }

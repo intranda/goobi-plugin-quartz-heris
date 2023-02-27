@@ -2,12 +2,20 @@ package io.goobi.api.job;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
 import org.goobi.production.flow.jobs.AbstractGoobiJob;
+
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.ChannelSftp.LsEntry;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.Session;
+import com.jcraft.jsch.SftpException;
 
 import de.sub.goobi.config.ConfigPlugins;
 import lombok.Getter;
@@ -24,6 +32,18 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
     @Getter
     private long lastRunMillis;
+
+    // sftp access
+    @Getter
+    private String knownHosts;
+    @Getter
+    private String username;
+    @Getter
+    private String hostname;
+    @Getter
+    private String password;
+    @Getter
+    private String ftpFolder;
 
     @Override
     public void execute() {
@@ -56,6 +76,54 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         config.setReloadingStrategy(new FileChangedReloadingStrategy());
         herisFolder = config.getString("/herisFolder");
         lastRunMillis = config.getLong("/lastrun", 0l);
+
+        username = config.getString("/sftp/username");
+        password = config.getString("/sftp/password");
+        hostname = config.getString("/sftp/hostname");
+        knownHosts = config.getString("/sftp/knownHosts", System.getProperty("user.home").concat("/.ssh/known_hosts"));
+        ftpFolder = config.getString("/sftp/sftpFolder");
+    }
+
+    private Path getLatestHerisFile() {
+        String jsonFile = "";
+        try {
+            // open sftp connection
+            ChannelSftp sftpChannel = openSftpConnection();
+            sftpChannel.connect();
+
+            // list files in configured directory
+            List<LsEntry> lsList = sftpChannel.ls(ftpFolder);
+            for (LsEntry lsEntry : lsList) {
+                // TODO find newest .json file
+                jsonFile = lsEntry.getFilename();
+                lsEntry.getAttrs().getATime();
+            }
+            // TODO download file into temp folder
+            Path destination = Paths.get("/tmp/", jsonFile);
+            sftpChannel.get(jsonFile, destination.toString());
+
+            // close connection
+            sftpChannel.disconnect();
+
+            return destination;
+        } catch (JSchException | SftpException e) {
+            log.error(e);
+        }
+        return null;
+    }
+
+    /**
+     * 
+     * @return ChannelSftp object
+     * @throws JSchException
+     */
+    private ChannelSftp openSftpConnection() throws JSchException {
+        JSch jsch = new JSch();
+        jsch.setKnownHosts(knownHosts);
+        Session jschSession = jsch.getSession(username, hostname);
+        jschSession.setPassword(password);
+        jschSession.connect();
+        return (ChannelSftp) jschSession.openChannel("sftp");
     }
 
     private void updateLastRun() {
