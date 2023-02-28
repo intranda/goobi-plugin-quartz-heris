@@ -30,7 +30,7 @@ import de.sub.goobi.persistence.managers.VocabularyManager;
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({ ConfigurationHelper.class, VocabularyManager.class, Helper.class })
 @PowerMockIgnore({ "javax.management.*", "javax.net.ssl.*", "jdk.internal.reflect.*", "com.sun.org.apache.xerces.*", "javax.xml.*", "org.xml.*",
-        "org.w3c.*" })
+    "org.w3c.*", "javax.crypto.*", "javax.crypto.JceSecurity" })
 public class HerisQuartzPluginTest {
 
     private static String resourcesFolder;
@@ -90,17 +90,37 @@ public class HerisQuartzPluginTest {
         HerisQuartzPlugin plugin = new HerisQuartzPlugin();
 
         plugin.parseConfiguration();
-        assertEquals("/tmp/", plugin.getHerisFolder());
+        assertEquals("/tmp/download", plugin.getHerisFolder());
         assertEquals(1, plugin.getLastRunMillis());
         assertEquals("username", plugin.getUsername());
         assertEquals("password", plugin.getPassword());
-        assertEquals("192.168.0.1", plugin.getHostname());
-        assertEquals("/home/user/.ssh/known_hosts", plugin.getKnownHosts());
-        assertEquals("/path/to/file", plugin.getFtpFolder());
+        assertEquals("localhost", plugin.getHostname());
+        assertEquals("~/.ssh/known_hosts", plugin.getKnownHosts());
+        assertEquals("/tmp/", plugin.getFtpFolder());
 
         assertEquals("HERIS", plugin.getVocabularyName());
         assertEquals(9, plugin.getJsonMapping().size());
     }
+
+
+    // enable this only if sftp server is installed and configured.
+    // set environment variables SFTP_USERNAME and SFTP_PASSWORD
+    // @Test
+    public void testSftpDownload() {
+
+        HerisQuartzPlugin plugin = new HerisQuartzPlugin();
+        plugin.parseConfiguration();
+        String username = System.getenv("SFTP_USERNAME");
+        String password = System.getenv("SFTP_PASSWORD");
+        plugin.setUsername(username);
+        plugin.setPassword(password);
+
+        plugin.getLatestHerisFile();
+
+    }
+
+
+
 
     @Test
     public void testReadJsonFile() throws Exception {

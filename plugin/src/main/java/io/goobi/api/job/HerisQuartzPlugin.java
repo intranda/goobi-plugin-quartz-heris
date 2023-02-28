@@ -52,12 +52,12 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     // sftp access
     @Getter
     private String knownHosts;
-    @Getter
+    @Getter @Setter
     private String username;
+    @Getter @Setter
+    private String password;
     @Getter
     private String hostname;
-    @Getter
-    private String password;
     @Getter
     private String ftpFolder;
 
@@ -131,27 +131,34 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         VocabularyManager.getAllRecords(vocabulary);
     }
 
-    private Path getLatestHerisFile() {
-        String jsonFile = "";
+    public Path getLatestHerisFile() {
         try {
             // open sftp connection
-            ChannelSftp sftpChannel = openSftpConnection();
+            JSch jsch = new JSch();
+            //            jsch.addIdentity("/path/to/key", "password");
+            //            jschSession.setPort(443);
+            jsch.setKnownHosts(knownHosts);
+            Session jschSession = jsch.getSession(username, hostname);
+            jschSession.setPassword(password);
+            jschSession.connect();
+            ChannelSftp sftpChannel = (ChannelSftp) jschSession.openChannel("sftp");
             sftpChannel.connect();
-
             // list files in configured directory
             List<LsEntry> lsList = sftpChannel.ls(ftpFolder);
+            int timestamp = 0;
+            String filename = null;
             for (LsEntry lsEntry : lsList) {
-                // TODO find newest .json file
-                jsonFile = lsEntry.getFilename();
-                lsEntry.getAttrs().getATime();
-            }
-            // TODO download file into temp folder
-            Path destination = Paths.get(herisFolder, jsonFile);
-            sftpChannel.get(jsonFile, destination.toString());
 
+                if (lsEntry.getFilename().endsWith(".json")&& (timestamp == 0 || timestamp < lsEntry.getAttrs().getMTime())) {
+                    timestamp = lsEntry.getAttrs().getMTime();
+                    filename = lsEntry.getFilename();
+                }
+            }
+            Path destination = Paths.get(herisFolder, filename);
+            sftpChannel.get(ftpFolder + filename, destination.toString());
             // close connection
             sftpChannel.disconnect();
-
+            jschSession.disconnect();
             return destination;
         } catch (JSchException | SftpException e) {
             log.error(e);
@@ -159,19 +166,6 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         return null;
     }
 
-    /**
-     * 
-     * @return ChannelSftp object
-     * @throws JSchException
-     */
-    private ChannelSftp openSftpConnection() throws JSchException {
-        JSch jsch = new JSch();
-        jsch.setKnownHosts(knownHosts);
-        Session jschSession = jsch.getSession(username, hostname);
-        jschSession.setPassword(password);
-        jschSession.connect();
-        return (ChannelSftp) jschSession.openChannel("sftp");
-    }
 
     private void updateLastRun() {
         try {
