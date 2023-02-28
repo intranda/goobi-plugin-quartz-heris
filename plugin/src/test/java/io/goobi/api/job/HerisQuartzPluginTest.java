@@ -91,7 +91,6 @@ public class HerisQuartzPluginTest {
 
         plugin.parseConfiguration();
         assertEquals("/tmp/download", plugin.getHerisFolder());
-        assertEquals(1, plugin.getLastRunMillis());
         assertEquals("username", plugin.getUsername());
         assertEquals("password", plugin.getPassword());
         assertEquals("localhost", plugin.getHostname());
@@ -101,7 +100,6 @@ public class HerisQuartzPluginTest {
         assertEquals("HERIS", plugin.getVocabularyName());
         assertEquals(9, plugin.getJsonMapping().size());
     }
-
 
     // enable this only if sftp server is installed and configured.
     // set environment variables SFTP_USERNAME and SFTP_PASSWORD
@@ -116,11 +114,7 @@ public class HerisQuartzPluginTest {
         plugin.setPassword(password);
 
         plugin.getLatestHerisFile();
-
     }
-
-
-
 
     @Test
     public void testReadJsonFile() throws Exception {

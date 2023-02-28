@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.HierarchicalConfiguration;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
@@ -33,6 +32,7 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
 import de.sub.goobi.config.ConfigPlugins;
+import de.sub.goobi.helper.StorageProvider;
 import de.sub.goobi.persistence.managers.VocabularyManager;
 import lombok.Getter;
 import lombok.Setter;
@@ -41,59 +41,79 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class HerisQuartzPlugin extends AbstractGoobiJob {
 
-    private XMLConfiguration config;
-
+    // folder where the gets stored temporary
     @Getter
     private String herisFolder;
 
-    @Getter
-    private long lastRunMillis;
-
     // sftp access
     @Getter
-    private String knownHosts;
-    @Getter @Setter
+    @Setter
     private String username;
-    @Getter @Setter
+    @Getter
+    @Setter
     private String password;
     @Getter
     private String hostname;
     @Getter
+    private String knownHosts;
+    @Getter
     private String ftpFolder;
 
+    // downloaded json file
     @Getter
     @Setter
     private Path jsonFile;
 
+    // name of the vocabulary to enrich
     @Getter
     private String vocabularyName;
+
+    // mapping between json element and vocabulary field
     @Getter
     private Map<String, String> jsonMapping;
 
     @Getter
     private Vocabulary vocabulary;
 
+    // identifier fields in vocabulary and json file
     private String identifierVocabField;
     private String identifierJsonField;
+
+
+    /**
+     * When called, this method gets executed
+     * 
+     * It will
+     * - download the latest json file from the configured sftp server
+     * - convert it into vocabulary records
+     * - save the new records
+     * 
+     */
 
     @Override
     public void execute() {
 
         parseConfiguration();
+        // search for latest json file
+        jsonFile = getLatestHerisFile();
 
-        // search for latest heris file
+        if (jsonFile == null) {
+            log.info("No import file found, continue");
+            return;
+        }
 
-        // check, if it is newer than the last import
-
-        // parse file
-
-        // convert into vocabulary records
-
-        // compare to existing records
-        // - update changed data
-        // - add new data
+        // file parsing and conversion into vocabulary records
+        generateRecordsFromFile();
 
         // save records
+        VocabularyManager.saveRecords(vocabulary);
+
+        // delete downloaded file
+        try {
+            StorageProvider.getInstance().deleteFile(jsonFile);
+        } catch (IOException e) {
+            log.error(e);
+        }
     }
 
     @Override
@@ -101,14 +121,18 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         return "intranda_quartz_herisJob";
     }
 
+    /**
+     * Parse the configuration file
+     * 
+     */
+
     public void parseConfiguration() {
         jsonMapping = new HashMap<>();
 
-        config = ConfigPlugins.getPluginConfig(getJobName());
+        XMLConfiguration config = ConfigPlugins.getPluginConfig(getJobName());
         config.setExpressionEngine(new XPathExpressionEngine());
         config.setReloadingStrategy(new FileChangedReloadingStrategy());
         herisFolder = config.getString("/herisFolder");
-        lastRunMillis = config.getLong("/lastrun", 0l);
 
         username = config.getString("/sftp/username");
         password = config.getString("/sftp/password");
@@ -131,6 +155,12 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         VocabularyManager.getAllRecords(vocabulary);
     }
 
+    /**
+     * Download the latest json file from configured sftp server
+     * 
+     * @return path to downloaded file or null
+     */
+
     public Path getLatestHerisFile() {
         try {
             // open sftp connection
@@ -149,7 +179,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             String filename = null;
             for (LsEntry lsEntry : lsList) {
 
-                if (lsEntry.getFilename().endsWith(".json")&& (timestamp == 0 || timestamp < lsEntry.getAttrs().getMTime())) {
+                if (lsEntry.getFilename().endsWith(".json") && (timestamp == 0 || timestamp < lsEntry.getAttrs().getMTime())) {
                     timestamp = lsEntry.getAttrs().getMTime();
                     filename = lsEntry.getFilename();
                 }
@@ -167,16 +197,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     }
 
 
-    private void updateLastRun() {
-        try {
-            config.setProperty("lastRun", lastRunMillis);
-            Path configurationFile = Paths.get(config.getBasePath(), "plugin_" + getJobName() + ".xml");
-            this.config.save(configurationFile.toString());
-        } catch (ConfigurationException e) {
-            log.error("Error while updating the configuration file", e);
-        }
-    }
-
+    /**
+     * Convert json file into VocabRecord
+     */
     public void generateRecordsFromFile() {
 
         // open json file
@@ -198,6 +221,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
     }
 
+    /*
+     * Convert a single json object, update the vocabulary record
+     */
     private void parseRecord(Object jsonRecord) {
         VocabRecord vocabRecord = null;
 
@@ -224,6 +250,11 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             }
         }
     }
+
+    /*
+     * Find an existing record for the given identifier or create a new record
+     * 
+     */
 
     private VocabRecord getRecord(String identifierValue) {
         // check existing records, if identifier exists

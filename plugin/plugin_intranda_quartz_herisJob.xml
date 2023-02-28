@@ -8,7 +8,7 @@
         <password>password</password>
         <hostname>localhost</hostname>
         <knownHosts>~/.ssh/known_hosts</knownHosts>
-        <sftpFolder>/tmp/</sftpFolder>
+        <sftpFolder>/path/to/remote/folder/</sftpFolder>
     </sftp>
     
     
