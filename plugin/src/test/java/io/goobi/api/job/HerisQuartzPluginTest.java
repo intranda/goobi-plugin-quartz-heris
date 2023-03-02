@@ -103,7 +103,7 @@ public class HerisQuartzPluginTest {
 
     // enable this only if sftp server is installed and configured.
     // set environment variables SFTP_USERNAME and SFTP_PASSWORD
-    // @Test
+    @Test
     public void testSftpDownload() {
 
         HerisQuartzPlugin plugin = new HerisQuartzPlugin();
