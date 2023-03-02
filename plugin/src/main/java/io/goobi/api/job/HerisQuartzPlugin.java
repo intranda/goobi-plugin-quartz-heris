@@ -165,8 +165,8 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         try {
             // open sftp connection
             JSch jsch = new JSch();
-            //            jsch.addIdentity("/path/to/key", "password");
-            //            jschSession.setPort(443);
+            //            jsch.addIdentity("/path/to/key", "password"); // NOSONAR use this, if key authentication is needed
+            //            jschSession.setPort(443);// NOSONAR use this, if other port than 22 is needed
             jsch.setKnownHosts(knownHosts);
             Session jschSession = jsch.getSession(username, hostname);
             jschSession.setPassword(password);
