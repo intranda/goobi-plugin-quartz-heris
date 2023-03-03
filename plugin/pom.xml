@@ -5,11 +5,9 @@
   <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>Goobi workflow - Plugin Quartz HERIS</name>
-
   <properties>
-    <goobi.version>23.01.2-SNAPSHOT</goobi.version>
+    <goobi.version>23.02</goobi.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     <!-- Sonar -->
     <sonar.projectKey>intranda_goobi-plugin-quartz-heris</sonar.projectKey>
     <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
@@ -76,6 +74,6 @@
       <artifactId>powermock-module-junit4</artifactId>
       <version>2.0.9</version>
       <scope>test</scope>
-    </dependency>    
+    </dependency>
   </dependencies>
 </project>
