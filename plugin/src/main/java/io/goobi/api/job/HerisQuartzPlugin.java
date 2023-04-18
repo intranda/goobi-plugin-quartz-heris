@@ -16,6 +16,7 @@ import org.apache.commons.configuration.HierarchicalConfiguration;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
+import org.apache.commons.lang.StringUtils;
 import org.goobi.production.flow.jobs.AbstractGoobiJob;
 import org.goobi.vocabulary.Definition;
 import org.goobi.vocabulary.Field;
@@ -53,6 +54,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     @Setter
     private String password;
     @Getter
+    @Setter
+    private String keyfile;
+    @Getter
     private String hostname;
     @Getter
     private String knownHosts;
@@ -79,14 +83,10 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     private String identifierVocabField;
     private String identifierJsonField;
 
-
     /**
      * When called, this method gets executed
      * 
-     * It will
-     * - download the latest json file from the configured sftp server
-     * - convert it into vocabulary records
-     * - save the new records
+     * It will - download the latest json file from the configured sftp server - convert it into vocabulary records - save the new records
      * 
      */
 
@@ -137,6 +137,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         username = config.getString("/sftp/username");
         password = config.getString("/sftp/password");
         hostname = config.getString("/sftp/hostname");
+        keyfile = config.getString("/sftp/keyfile");
         knownHosts = config.getString("/sftp/knownHosts", System.getProperty("user.home").concat("/.ssh/known_hosts"));
         ftpFolder = config.getString("/sftp/sftpFolder");
 
@@ -165,11 +166,17 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         try {
             // open sftp connection
             JSch jsch = new JSch();
-            //            jsch.addIdentity("/path/to/key", "password"); // NOSONAR use this, if key authentication is needed
+            if (StringUtils.isNotBlank(keyfile) && StringUtils.isNotBlank(password)) {
+                jsch.addIdentity(keyfile, password);
+            } else if (StringUtils.isNotBlank(keyfile)) {
+                jsch.addIdentity(keyfile);
+            }
             //            jschSession.setPort(443);// NOSONAR use this, if other port than 22 is needed
             jsch.setKnownHosts(knownHosts);
             Session jschSession = jsch.getSession(username, hostname);
-            jschSession.setPassword(password);
+            if (StringUtils.isBlank(keyfile)) {
+                jschSession.setPassword(password);
+            }
             jschSession.connect();
             ChannelSftp sftpChannel = (ChannelSftp) jschSession.openChannel("sftp");
             sftpChannel.connect();
@@ -195,7 +202,6 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         }
         return null;
     }
-
 
     /**
      * Convert json file into VocabRecord

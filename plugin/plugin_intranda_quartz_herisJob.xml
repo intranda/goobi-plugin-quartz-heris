@@ -2,7 +2,7 @@
     <!-- Folder in which the heris export file is expected to be stored -->
     <herisFolder>/tmp/download</herisFolder>
 
-    <!-- sftp credentials -->
+    <!-- sftp credentials for username + password authentication -->
     <sftp>
         <username>username</username>
         <password>password</password>
@@ -12,6 +12,29 @@
     </sftp>
     
     
+    <!-- sftp credentials for username + public/private key authentication -->
+    <!-- 
+    <sftp>
+        <username>username</username>
+        <keyfile>/path/to/private/key</keyfile>
+        <hostname>localhost</hostname>
+        <knownHosts>~/.ssh/known_hosts</knownHosts>
+        <sftpFolder>/path/to/remote/folder/</sftpFolder>
+    </sftp> 
+     -->
+     
+      <!-- sftp credentials for password protected public/private key authentication -->
+    <!-- 
+    <sftp>
+        <username>username</username>
+        <keyfile>/path/to/private/key</keyfile>
+        <password>password</password>
+        <hostname>localhost</hostname>
+        <knownHosts>~/.ssh/known_hosts</knownHosts>
+        <sftpFolder>/path/to/remote/folder/</sftpFolder>
+    </sftp> 
+     -->   
+     
     <vocabulary name="HERIS">
         <field fieldName="herisid" jsonPath="$.['HERIS-ID']" identifier="true" />
         <field fieldName="objektid" jsonPath="$.['Alte Objekt-ID']" />
