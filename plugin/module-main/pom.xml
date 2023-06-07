@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.intranda.goobi.plugins.quartz</groupId>
   <artifactId>heris-main</artifactId>
-  <version>23.05</version>
+  <version>23.05.1</version>
   <name>Plugin Quartz HERIS: Build jar package</name>
   <url>https://github.com/intranda/goobi-plugin-quartz-heris</url>
   <properties>
@@ -14,7 +14,7 @@
   <parent>
     <groupId>de.intranda.goobi.plugins.quartz</groupId>
     <artifactId>heris</artifactId>
-    <version>23.05</version>
+    <version>23.05.1</version>
   </parent>
   <build>
     <finalName>${jar.name}</finalName>
