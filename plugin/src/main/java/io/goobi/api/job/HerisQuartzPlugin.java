@@ -63,6 +63,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     @Getter
     private String ftpFolder;
 
+    @Getter
+    private int port = 22;
+
     // downloaded json file
     @Getter
     @Setter
@@ -137,10 +140,10 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         username = config.getString("/sftp/username");
         password = config.getString("/sftp/password");
         hostname = config.getString("/sftp/hostname");
+        port = config.getInt("/sftp/port", 22);
         keyfile = config.getString("/sftp/keyfile");
         knownHosts = config.getString("/sftp/knownHosts", System.getProperty("user.home").concat("/.ssh/known_hosts"));
         ftpFolder = config.getString("/sftp/sftpFolder");
-
         vocabularyName = config.getString("/vocabulary/@name");
 
         List<HierarchicalConfiguration> fields = config.configurationsAt("/vocabulary/field");
@@ -173,7 +176,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             }
             //            jschSession.setPort(443);// NOSONAR use this, if other port than 22 is needed
             jsch.setKnownHosts(knownHosts);
-            Session jschSession = jsch.getSession(username, hostname);
+            Session jschSession = jsch.getSession(username, hostname, port);
             if (StringUtils.isBlank(keyfile)) {
                 jschSession.setPassword(password);
             }
