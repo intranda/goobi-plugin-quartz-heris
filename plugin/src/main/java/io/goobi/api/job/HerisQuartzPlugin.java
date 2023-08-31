@@ -62,6 +62,8 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     private String knownHosts;
     @Getter
     private String ftpFolder;
+    @Getter
+    private String pubkeyAcceptedAlgorithms;
 
     @Getter
     private int port = 22;
@@ -144,6 +146,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         keyfile = config.getString("/sftp/keyfile");
         knownHosts = config.getString("/sftp/knownHosts", System.getProperty("user.home").concat("/.ssh/known_hosts"));
         ftpFolder = config.getString("/sftp/sftpFolder");
+        pubkeyAcceptedAlgorithms = config.getString("/sftp/pubkeyAcceptedAlgorithms");
         vocabularyName = config.getString("/vocabulary/@name");
 
         List<HierarchicalConfiguration> fields = config.configurationsAt("/vocabulary/field");
@@ -179,6 +182,11 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             Session jschSession = jsch.getSession(username, hostname, port);
             if (StringUtils.isBlank(keyfile)) {
                 jschSession.setPassword(password);
+            }
+            if (StringUtils.isNotBlank(pubkeyAcceptedAlgorithms)) {
+                Properties config = new Properties();
+                config.put("PubkeyAcceptedAlgorithms", pubkeyAcceptedAlgorithms);
+                jschSession.setConfig(config);
             }
             jschSession.connect();
             ChannelSftp sftpChannel = (ChannelSftp) jschSession.openChannel("sftp");
