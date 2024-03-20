@@ -5,6 +5,6 @@
     <artifactId>plugin-quartz-heris</artifactId>
     <version>24.03-SNAPSHOT</version>
   </parent>
-  <artifactId>plugin-quartz-heris-base</artifactId>
+  <artifactId>plugin-quartz-heris-job</artifactId>
   <packaging>jar</packaging>
 </project>
