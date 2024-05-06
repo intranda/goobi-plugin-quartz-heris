@@ -225,7 +225,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             try (Stream<Path> walk = Files.walk(Path.of(herisFolder))) {
                 return walk.filter(p -> !Files.isDirectory(p))
                         .filter(p -> p.toString().toLowerCase().endsWith(".json"))
-                        .max(Comparator.comparing((p) -> p.toFile().lastModified(), Long::compare))
+                        .max(Comparator.comparing(p -> p.toFile().lastModified(), Long::compare))
                         .orElse(null);
             } catch (IOException e) {
                 log.error(e);
