@@ -4,14 +4,17 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.stream.Stream;
 
 import org.apache.commons.configuration.HierarchicalConfiguration;
 import org.apache.commons.configuration.XMLConfiguration;
@@ -45,6 +48,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
     // folder where the gets stored temporary
     @Getter
+    @Setter
     private String herisFolder;
 
     // sftp access
@@ -88,6 +92,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     // identifier fields in vocabulary and json file
     private String identifierVocabField;
     private String identifierJsonField;
+
+    @Setter
+    private boolean useSFTP;
 
     /**
      * When called, this method gets executed
@@ -140,6 +147,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         config.setReloadingStrategy(new FileChangedReloadingStrategy());
         herisFolder = config.getString("/herisFolder");
 
+        useSFTP = config.getBoolean("/sftp/@use", true);
         username = config.getString("/sftp/username");
         password = config.getString("/sftp/password");
         hostname = config.getString("/sftp/hostname");
@@ -170,47 +178,58 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
      */
 
     public Path getLatestHerisFile() {
-        try {
-            // open sftp connection
-            JSch jsch = new JSch();
-            if (StringUtils.isNotBlank(keyfile) && StringUtils.isNotBlank(password)) {
-                jsch.addIdentity(keyfile, password);
-            } else if (StringUtils.isNotBlank(keyfile)) {
-                jsch.addIdentity(keyfile);
-            }
-            //            jschSession.setPort(443);// NOSONAR use this, if other port than 22 is needed
-            jsch.setKnownHosts(knownHosts);
-            Session jschSession = jsch.getSession(username, hostname, port);
-            if (StringUtils.isBlank(keyfile)) {
-                jschSession.setPassword(password);
-            }
-            if (StringUtils.isNotBlank(pubkeyAcceptedAlgorithms)) {
-                Properties config = new Properties();
-                config.put("PubkeyAcceptedAlgorithms", pubkeyAcceptedAlgorithms);
-                jschSession.setConfig(config);
-            }
-            jschSession.connect();
-            ChannelSftp sftpChannel = (ChannelSftp) jschSession.openChannel("sftp");
-            sftpChannel.connect();
-            // list files in configured directory
-            List<LsEntry> lsList = sftpChannel.ls(ftpFolder);
-            int timestamp = 0;
-            String filename = null;
-            for (LsEntry lsEntry : lsList) {
-
-                if (lsEntry.getFilename().endsWith(".json") && (timestamp == 0 || timestamp < lsEntry.getAttrs().getMTime())) {
-                    timestamp = lsEntry.getAttrs().getMTime();
-                    filename = lsEntry.getFilename();
+        if (useSFTP) {
+            try {
+                // open sftp connection
+                JSch jsch = new JSch();
+                if (StringUtils.isNotBlank(keyfile) && StringUtils.isNotBlank(password)) {
+                    jsch.addIdentity(keyfile, password);
+                } else if (StringUtils.isNotBlank(keyfile)) {
+                    jsch.addIdentity(keyfile);
                 }
+                //            jschSession.setPort(443);// NOSONAR use this, if other port than 22 is needed
+                jsch.setKnownHosts(knownHosts);
+                Session jschSession = jsch.getSession(username, hostname, port);
+                if (StringUtils.isBlank(keyfile)) {
+                    jschSession.setPassword(password);
+                }
+                if (StringUtils.isNotBlank(pubkeyAcceptedAlgorithms)) {
+                    Properties config = new Properties();
+                    config.put("PubkeyAcceptedAlgorithms", pubkeyAcceptedAlgorithms);
+                    jschSession.setConfig(config);
+                }
+                jschSession.connect();
+                ChannelSftp sftpChannel = (ChannelSftp) jschSession.openChannel("sftp");
+                sftpChannel.connect();
+                // list files in configured directory
+                List<LsEntry> lsList = sftpChannel.ls(ftpFolder);
+                int timestamp = 0;
+                String filename = null;
+                for (LsEntry lsEntry : lsList) {
+
+                    if (lsEntry.getFilename().endsWith(".json") && (timestamp == 0 || timestamp < lsEntry.getAttrs().getMTime())) {
+                        timestamp = lsEntry.getAttrs().getMTime();
+                        filename = lsEntry.getFilename();
+                    }
+                }
+                Path destination = Paths.get(herisFolder, filename);
+                sftpChannel.get(ftpFolder + filename, destination.toString());
+                // close connection
+                sftpChannel.disconnect();
+                jschSession.disconnect();
+                return destination;
+            } catch (JSchException | SftpException e) {
+                log.error(e);
             }
-            Path destination = Paths.get(herisFolder, filename);
-            sftpChannel.get(ftpFolder + filename, destination.toString());
-            // close connection
-            sftpChannel.disconnect();
-            jschSession.disconnect();
-            return destination;
-        } catch (JSchException | SftpException e) {
-            log.error(e);
+        } else {
+            try (Stream<Path> walk = Files.walk(Path.of(herisFolder))) {
+                return walk.filter(p -> !Files.isDirectory(p))
+                        .filter(p -> p.toString().toLowerCase().endsWith(".json"))
+                        .max(Comparator.comparing(p -> p.toFile().lastModified(), Long::compare))
+                        .orElse(null);
+            } catch (IOException e) {
+                log.error(e);
+            }
         }
         return null;
     }
