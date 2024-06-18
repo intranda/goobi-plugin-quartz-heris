@@ -1,32 +1,5 @@
 package io.goobi.api.job;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.stream.Stream;
-
-import org.apache.commons.configuration.HierarchicalConfiguration;
-import org.apache.commons.configuration.XMLConfiguration;
-import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
-import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
-import org.apache.commons.lang.StringUtils;
-import org.goobi.production.flow.jobs.AbstractGoobiJob;
-import org.goobi.vocabulary.Definition;
-import org.goobi.vocabulary.Field;
-import org.goobi.vocabulary.VocabRecord;
-import org.goobi.vocabulary.Vocabulary;
-
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
 import com.jcraft.jsch.ChannelSftp;
@@ -35,13 +8,40 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
-
 import de.sub.goobi.config.ConfigPlugins;
 import de.sub.goobi.helper.StorageProvider;
-import de.sub.goobi.persistence.managers.VocabularyManager;
+import io.goobi.vocabulary.exchange.FieldInstance;
+import io.goobi.vocabulary.exchange.FieldValue;
+import io.goobi.vocabulary.exchange.TranslationInstance;
+import io.goobi.vocabulary.exchange.Vocabulary;
+import io.goobi.vocabulary.exchange.VocabularyRecord;
+import io.goobi.vocabulary.exchange.VocabularySchema;
+import io.goobi.workflow.api.vocabulary.VocabularyAPIManager;
+import io.goobi.workflow.api.vocabulary.jsfwrapper.JSFVocabularyRecord;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
+import org.apache.commons.configuration.HierarchicalConfiguration;
+import org.apache.commons.configuration.XMLConfiguration;
+import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
+import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
+import org.apache.commons.lang.StringUtils;
+import org.goobi.production.flow.jobs.AbstractGoobiJob;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.stream.Stream;
 
 @Log4j2
 public class HerisQuartzPlugin extends AbstractGoobiJob {
@@ -82,15 +82,23 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     @Getter
     private String vocabularyName;
 
+    @Getter
+    private Vocabulary vocabulary;
+
+    private VocabularySchema vocabularySchema;
+
+    private long vocabularyId;
+
+    private VocabularyAPIManager vocabularyAPI = VocabularyAPIManager.getInstance();
+
     // mapping between json element and vocabulary field
     @Getter
     private Map<String, String> jsonMapping;
 
-    @Getter
-    private Vocabulary vocabulary;
 
     // identifier fields in vocabulary and json file
     private String identifierVocabField;
+    private long identifierVocabFieldId;
     private String identifierJsonField;
 
     @Setter
@@ -119,7 +127,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         generateRecordsFromFile();
 
         // save records
-        VocabularyManager.saveRecords(vocabulary);
+//        VocabularyManager.saveRecords(vocabulary);
 
         // delete downloaded file
         try {
@@ -167,8 +175,14 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             }
         }
 
-        vocabulary = VocabularyManager.getVocabularyByTitle(vocabularyName);
-        VocabularyManager.getAllRecords(vocabulary);
+        vocabulary = vocabularyAPI.vocabularies().findByName(vocabularyName);
+        vocabularyId = vocabulary.getId();
+        vocabularySchema = vocabularyAPI.vocabularySchemas().get(vocabulary.getSchemaId());
+        identifierVocabFieldId = vocabularySchema.getDefinitions().stream()
+                .filter(d -> d.getName().equals(identifierVocabField))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Field \"" + identifierVocabField + "\" does not exist in vocabulary \"" + vocabularyName + "\""))
+                .getId();
     }
 
     /**
@@ -249,7 +263,12 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
                 // parse metadata
                 for (Object jsonRecord : records) {
-                    parseRecord(jsonRecord);
+                    VocabularyRecord vocabRecord = parseRecord(jsonRecord);
+                    if (vocabRecord.getId() == null) {
+                        vocabularyAPI.vocabularyRecords().create(vocabRecord);
+                    } else {
+                        vocabularyAPI.vocabularyRecords().change(vocabRecord);
+                    }
                 }
             }
         } catch (IOException e) {
@@ -261,64 +280,65 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     /*
      * Convert a single json object, update the vocabulary record
      */
-    private void parseRecord(Object jsonRecord) {
-        VocabRecord vocabRecord = null;
-
+    private VocabularyRecord parseRecord(Object jsonRecord) {
         // get identifier field
         String identifierValue = (String) JsonPath.read(jsonRecord, identifierJsonField);
 
-        vocabRecord = getRecord(identifierValue);
+        VocabularyRecord vocabRecord = findOrCreateNewRecord(identifierValue);
 
-        // add values to fields
+        // add or overwrite values
 
-        for (Entry<String, String> entry : jsonMapping.entrySet()) {
+        for (Map.Entry<String, String> entry : jsonMapping.entrySet()) {
             String fieldName = entry.getKey();
             String jsonPath = entry.getValue();
 
-            Field field = vocabRecord.getFieldByLabel(fieldName);
-            if (field != null) {
-                Object val = JsonPath.read(jsonRecord, jsonPath);
-                if (val != null) {
-                    String value = (String) val;
-                    field.setValue(value);
-                } else {
-                    field.setValue("");
-                }
+            long definitionId = vocabularySchema.getDefinitions().stream()
+                    .filter(d -> d.getName().equals(fieldName))
+                    .findFirst()
+                    .orElseThrow(() -> new RuntimeException("Field \"" + fieldName + "\" does not exist in vocabulary \"" + vocabularyName + "\""))
+                    .getId();
+
+            // remove existing field
+            vocabRecord.getFields().removeIf(f -> f.getDefinitionId().equals(definitionId));
+
+            Object val = JsonPath.read(jsonRecord, jsonPath);
+            if (val == null) {
+                continue;
             }
+
+            FieldInstance field = new FieldInstance();
+            field.setDefinitionId(definitionId);
+            field.setRecordId(vocabRecord.getId()); // This is either null for new records or existing id for existing records (API expects this like this)
+            TranslationInstance translationInstance = new TranslationInstance();
+            translationInstance.setValue((String) val);
+            FieldValue fieldValue = new FieldValue();
+            fieldValue.setTranslations(List.of(translationInstance));
+            field.setValues(List.of(fieldValue));
+
+            vocabRecord.getFields().add(field);
         }
+
+        return vocabRecord;
     }
 
     /*
      * Find an existing record for the given identifier or create a new record
      * 
      */
+    private VocabularyRecord findOrCreateNewRecord(String identifierValue) {
+        List<JSFVocabularyRecord> results = vocabularyAPI.vocabularyRecords()
+                .search(vocabularyId, identifierVocabFieldId + ":" + identifierValue)
+                .getContent();
 
-    private VocabRecord getRecord(String identifierValue) {
-        // check existing records, if identifier exists
-        VocabRecord vocabRecord = null;
-        for (VocabRecord vr : vocabulary.getRecords()) {
-            String recId = vr.getFieldByLabel(identifierVocabField).getValue();
-            if (identifierValue.equals(recId)) {
-                log.debug("found existing record for id {}", identifierValue);
-                vocabRecord = vr;
-                break;
-            }
+        if (results.isEmpty()) {
+            VocabularyRecord newRecord = new VocabularyRecord();
+            newRecord.setVocabularyId(vocabularyId);
+            newRecord.setFields(new HashSet<>());
+            return newRecord;
+        } else if (results.size() == 1) {
+            return results.get(0);
+        } else {
+            throw new RuntimeException("Found vocabulary record not unique, skipping import of this entry");
         }
-
-        // otherwise create a new record
-        if (vocabRecord == null) {
-            log.debug("create new record for id {}", identifierValue);
-            vocabRecord = new VocabRecord();
-            vocabRecord.setVocabularyId(vocabulary.getId());
-            vocabulary.getRecords().add(vocabRecord);
-
-            List<Field> fieldList = new ArrayList<>();
-            for (Definition definition : vocabulary.getStruct()) {
-                Field field = new Field(definition.getLabel(), definition.getLanguage(), "", definition);
-                fieldList.add(field);
-            }
-            vocabRecord.setFields(fieldList);
-        }
-        return vocabRecord;
     }
 }
