@@ -17,6 +17,7 @@ import io.goobi.vocabulary.exchange.Vocabulary;
 import io.goobi.vocabulary.exchange.VocabularyRecord;
 import io.goobi.vocabulary.exchange.VocabularySchema;
 import io.goobi.workflow.api.vocabulary.VocabularyAPIManager;
+import io.goobi.workflow.api.vocabulary.VocabularyRecordAPI;
 import io.goobi.workflow.api.vocabulary.jsfwrapper.JSFVocabularyRecord;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,6 +39,7 @@ import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -124,9 +126,17 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         }
 
         // file parsing and conversion into vocabulary records
-        generateRecordsFromFile();
+        List<VocabularyRecord> records = generateRecordsFromFile();
 
         // save records
+        VocabularyRecordAPI recordAPI = vocabularyAPI.vocabularyRecords();
+        records.forEach(r -> {
+            if (r.getId() == null) {
+                recordAPI.create(r);
+            } else {
+                recordAPI.change(r);
+            }
+        });
 //        VocabularyManager.saveRecords(vocabulary);
 
         // delete downloaded file
@@ -251,7 +261,8 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     /**
      * Convert json file into VocabRecord
      */
-    public void generateRecordsFromFile() {
+    public List<VocabularyRecord> generateRecordsFromFile() {
+        List<VocabularyRecord> result = new LinkedList<>();
 
         // open json file
         try (InputStream is = new FileInputStream(jsonFile.toFile())) {
@@ -262,19 +273,13 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
                 List<?> records = (List<?>) object;
 
                 // parse metadata
-                for (Object jsonRecord : records) {
-                    VocabularyRecord vocabRecord = parseRecord(jsonRecord);
-                    if (vocabRecord.getId() == null) {
-                        vocabularyAPI.vocabularyRecords().create(vocabRecord);
-                    } else {
-                        vocabularyAPI.vocabularyRecords().change(vocabRecord);
-                    }
-                }
+                records.forEach(r -> result.add(parseRecord(r)));
             }
         } catch (IOException e) {
             log.error(e);
         }
 
+        return result;
     }
 
     /*
@@ -338,7 +343,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         } else if (results.size() == 1) {
             return results.get(0);
         } else {
-            throw new RuntimeException("Found vocabulary record not unique, skipping import of this entry");
+            throw new IllegalArgumentException("Found vocabulary record not unique, skipping import of this entry");
         }
     }
 }
