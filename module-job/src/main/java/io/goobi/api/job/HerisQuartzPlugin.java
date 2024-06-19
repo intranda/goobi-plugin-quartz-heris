@@ -10,6 +10,7 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 import de.sub.goobi.config.ConfigPlugins;
 import de.sub.goobi.helper.StorageProvider;
+import io.goobi.vocabulary.exchange.FieldDefinition;
 import io.goobi.vocabulary.exchange.FieldInstance;
 import io.goobi.vocabulary.exchange.FieldValue;
 import io.goobi.vocabulary.exchange.TranslationInstance;
@@ -36,12 +37,14 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Properties;
 import java.util.stream.Stream;
 
@@ -87,6 +90,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
     @Getter
     private Vocabulary vocabulary;
 
+    @Getter
+    private List<VocabularyRecord> parsedRecords = Collections.emptyList();
+
     private VocabularySchema vocabularySchema;
 
     private long vocabularyId;
@@ -126,18 +132,17 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         }
 
         // file parsing and conversion into vocabulary records
-        List<VocabularyRecord> records = generateRecordsFromFile();
+        parsedRecords = generateRecordsFromFile();
 
         // save records
         VocabularyRecordAPI recordAPI = vocabularyAPI.vocabularyRecords();
-        records.forEach(r -> {
+        parsedRecords.forEach(r -> {
             if (r.getId() == null) {
                 recordAPI.create(r);
             } else {
                 recordAPI.change(r);
             }
         });
-//        VocabularyManager.saveRecords(vocabulary);
 
         // delete downloaded file
         try {
@@ -297,14 +302,17 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             String fieldName = entry.getKey();
             String jsonPath = entry.getValue();
 
-            long definitionId = vocabularySchema.getDefinitions().stream()
+            Optional<Long> definitionId = vocabularySchema.getDefinitions().stream()
                     .filter(d -> d.getName().equals(fieldName))
                     .findFirst()
-                    .orElseThrow(() -> new RuntimeException("Field \"" + fieldName + "\" does not exist in vocabulary \"" + vocabularyName + "\""))
-                    .getId();
+                    .map(FieldDefinition::getId);
+
+            if (definitionId.isEmpty()) {
+                continue;
+            }
 
             // remove existing field
-            vocabRecord.getFields().removeIf(f -> f.getDefinitionId().equals(definitionId));
+            vocabRecord.getFields().removeIf(f -> f.getDefinitionId().equals(definitionId.get()));
 
             Object val = JsonPath.read(jsonRecord, jsonPath);
             if (val == null) {
@@ -312,7 +320,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             }
 
             FieldInstance field = new FieldInstance();
-            field.setDefinitionId(definitionId);
+            field.setDefinitionId(definitionId.get());
             field.setRecordId(vocabRecord.getId()); // This is either null for new records or existing id for existing records (API expects this like this)
             TranslationInstance translationInstance = new TranslationInstance();
             translationInstance.setValue((String) val);
