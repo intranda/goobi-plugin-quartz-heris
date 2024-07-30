@@ -11,6 +11,8 @@ import io.goobi.workflow.api.vocabulary.VocabularyAPIManager;
 import io.goobi.workflow.api.vocabulary.VocabularyRecordAPI;
 import io.goobi.workflow.api.vocabulary.VocabularySchemaAPI;
 import io.goobi.workflow.api.vocabulary.hateoas.VocabularyRecordPageResult;
+import io.goobi.workflow.api.vocabulary.helper.ExtendedVocabulary;
+import io.goobi.workflow.api.vocabulary.helper.ExtendedVocabularyRecord;
 import org.easymock.EasyMock;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -25,6 +27,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Instant;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -90,13 +93,20 @@ public class HerisQuartzPluginTest {
         vocabulary.setName("HERIS");
         vocabulary.setId(idCounter++);
         vocabulary.setSchemaId(vocabularySchema.getId());
-        EasyMock.expect(vocabularyAPI.findByName("HERIS")).andReturn(vocabulary).anyTimes();
+        EasyMock.expect(vocabularyAPI.findByName("HERIS")).andReturn(new ExtendedVocabulary(vocabulary)).anyTimes();
         EasyMock.replay(vocabularyAPI);
 
         VocabularyRecordAPI vocabularyRecordAPI = EasyMock.createMock(VocabularyRecordAPI.class);
         // As merging was not tested before, we assume all records not existing
+
         VocabularyRecordPageResult emptyResult = new VocabularyRecordPageResult();
-        EasyMock.expect(vocabularyRecordAPI.search(EasyMock.anyLong(), EasyMock.anyString())).andReturn(emptyResult).anyTimes();
+        VocabularyRecordAPI.VocabularyRecordQueryBuilder query = EasyMock.createMock(VocabularyRecordAPI.VocabularyRecordQueryBuilder.class);
+        EasyMock.expect(query.search(EasyMock.anyString())).andReturn(query).anyTimes();
+        EasyMock.expect(query.request()).andReturn(emptyResult).anyTimes();
+        EasyMock.replay(query);
+        EasyMock.expect(vocabularyRecordAPI.list(EasyMock.anyLong())).andReturn(query).anyTimes();
+        EasyMock.expect(vocabularyRecordAPI.createEmptyRecord(EasyMock.anyLong(), EasyMock.anyLong(), EasyMock.anyBoolean())).andReturn(newEmptyRecord()).anyTimes();
+
         EasyMock.replay(vocabularyRecordAPI);
 
         PowerMock.mockStatic(VocabularyAPIManager.class);
@@ -107,6 +117,15 @@ public class HerisQuartzPluginTest {
         EasyMock.expect(vocabularyAPIManager.vocabularyRecords()).andReturn(vocabularyRecordAPI).anyTimes();
         PowerMock.replay(VocabularyAPIManager.class);
         EasyMock.replay(vocabularyAPIManager);
+    }
+
+    private ExtendedVocabularyRecord newEmptyRecord() {
+        VocabularyRecord record = new VocabularyRecord();
+        record.setVocabularyId(0L);
+        record.setParentId(null);
+        record.setMetadata(false);
+        record.setFields(new HashSet<>());
+        return new ExtendedVocabularyRecord(record);
     }
 
     private List<FieldDefinition> prepareSchemaDefinitions() {

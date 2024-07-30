@@ -19,7 +19,7 @@ import io.goobi.vocabulary.exchange.VocabularyRecord;
 import io.goobi.vocabulary.exchange.VocabularySchema;
 import io.goobi.workflow.api.vocabulary.VocabularyAPIManager;
 import io.goobi.workflow.api.vocabulary.VocabularyRecordAPI;
-import io.goobi.workflow.api.vocabulary.jsfwrapper.JSFVocabularyRecord;
+import io.goobi.workflow.api.vocabulary.helper.ExtendedVocabularyRecord;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
@@ -136,13 +136,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
         // save records
         VocabularyRecordAPI recordAPI = vocabularyAPI.vocabularyRecords();
-        parsedRecords.forEach(r -> {
-            if (r.getId() == null) {
-                recordAPI.create(r);
-            } else {
-                recordAPI.change(r);
-            }
-        });
+        parsedRecords.forEach(recordAPI::save);
 
         // delete downloaded file
         try {
@@ -338,16 +332,15 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
      * Find an existing record for the given identifier or create a new record
      * 
      */
-    private VocabularyRecord findOrCreateNewRecord(String identifierValue) {
-        List<JSFVocabularyRecord> results = vocabularyAPI.vocabularyRecords()
-                .search(vocabularyId, identifierVocabFieldId + ":" + identifierValue)
+    private ExtendedVocabularyRecord findOrCreateNewRecord(String identifierValue) {
+        List<ExtendedVocabularyRecord> results = vocabularyAPI.vocabularyRecords()
+                .list(vocabularyId)
+                .search(identifierVocabFieldId + ":" + identifierValue)
+                .request()
                 .getContent();
 
         if (results.isEmpty()) {
-            VocabularyRecord newRecord = new VocabularyRecord();
-            newRecord.setVocabularyId(vocabularyId);
-            newRecord.setFields(new HashSet<>());
-            return newRecord;
+            return vocabularyAPI.vocabularyRecords().createEmptyRecord(vocabularyId, null, false);
         } else if (results.size() == 1) {
             return results.get(0);
         } else {
