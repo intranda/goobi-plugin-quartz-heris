@@ -1,11 +1,13 @@
 package io.goobi.api.job;
 
 import de.sub.goobi.config.ConfigurationHelper;
+import de.sub.goobi.forms.SpracheForm;
 import de.sub.goobi.helper.Helper;
 import io.goobi.vocabulary.exchange.FieldDefinition;
 import io.goobi.vocabulary.exchange.Vocabulary;
 import io.goobi.vocabulary.exchange.VocabularyRecord;
 import io.goobi.vocabulary.exchange.VocabularySchema;
+import io.goobi.workflow.api.vocabulary.FieldTypeAPI;
 import io.goobi.workflow.api.vocabulary.VocabularyAPI;
 import io.goobi.workflow.api.vocabulary.VocabularyAPIManager;
 import io.goobi.workflow.api.vocabulary.VocabularyRecordAPI;
@@ -13,6 +15,7 @@ import io.goobi.workflow.api.vocabulary.VocabularySchemaAPI;
 import io.goobi.workflow.api.vocabulary.hateoas.VocabularyRecordPageResult;
 import io.goobi.workflow.api.vocabulary.helper.ExtendedVocabulary;
 import io.goobi.workflow.api.vocabulary.helper.ExtendedVocabularyRecord;
+import org.apache.commons.math3.analysis.function.Pow;
 import org.easymock.EasyMock;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -27,9 +30,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Instant;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -57,7 +62,6 @@ public class HerisQuartzPluginTest {
         }
 
         String log4jFile = resourcesFolder + "log4j2.xml"; // for junit tests in eclipse
-
         System.setProperty("log4j.configurationFile", log4jFile);
 
         jsonFile = Paths.get(resourcesFolder, "sample.json");
@@ -77,16 +81,28 @@ public class HerisQuartzPluginTest {
         EasyMock.replay(configurationHelper);
         PowerMock.replay(ConfigurationHelper.class);
 
+        SpracheForm spracheForm = EasyMock.createMock(SpracheForm.class);
+        EasyMock.expect(spracheForm.getLocale()).andReturn(Locale.ENGLISH).anyTimes();
+        EasyMock.replay(spracheForm);
+
         PowerMock.mockStatic(Helper.class);
         EasyMock.expect(Helper.getCurrentUser()).andReturn(null).anyTimes();
+        EasyMock.expect(Helper.getLanguageBean()).andReturn(spracheForm).anyTimes();
         PowerMock.replay(Helper.class);
 
         VocabularySchemaAPI vocabularySchemaAPI = EasyMock.createMock(VocabularySchemaAPI.class);
         vocabularySchema = new VocabularySchema();
         vocabularySchema.setId(idCounter++);
         vocabularySchema.setDefinitions(prepareSchemaDefinitions());
+        vocabularySchema.getDefinitions().forEach(d ->
+                EasyMock.expect(vocabularySchemaAPI.getDefinition(d.getId())).andReturn(d).anyTimes()
+        );
         EasyMock.expect(vocabularySchemaAPI.get(vocabularySchema.getId())).andReturn(vocabularySchema).anyTimes();
+        EasyMock.expect(vocabularySchemaAPI.getSchema((VocabularyRecord) EasyMock.anyObject())).andReturn(vocabularySchema).anyTimes();
         EasyMock.replay(vocabularySchemaAPI);
+
+        FieldTypeAPI fieldTypeAPI = EasyMock.createMock(FieldTypeAPI.class);
+        EasyMock.replay(fieldTypeAPI);
 
         VocabularyAPI vocabularyAPI = EasyMock.createMock(VocabularyAPI.class);
         Vocabulary vocabulary = new Vocabulary();
@@ -99,6 +115,16 @@ public class HerisQuartzPluginTest {
         VocabularyRecordAPI vocabularyRecordAPI = EasyMock.createMock(VocabularyRecordAPI.class);
         // As merging was not tested before, we assume all records not existing
 
+        PowerMock.mockStatic(VocabularyAPIManager.class);
+        VocabularyAPIManager vocabularyAPIManager = EasyMock.createMock(VocabularyAPIManager.class);
+        EasyMock.expect(VocabularyAPIManager.getInstance()).andReturn(vocabularyAPIManager).anyTimes();
+        EasyMock.expect(vocabularyAPIManager.fieldTypes()).andReturn(fieldTypeAPI).anyTimes();
+        EasyMock.expect(vocabularyAPIManager.vocabularies()).andReturn(vocabularyAPI).anyTimes();
+        EasyMock.expect(vocabularyAPIManager.vocabularySchemas()).andReturn(vocabularySchemaAPI).anyTimes();
+        EasyMock.expect(vocabularyAPIManager.vocabularyRecords()).andReturn(vocabularyRecordAPI).anyTimes();
+        PowerMock.replay(VocabularyAPIManager.class);
+        EasyMock.replay(vocabularyAPIManager);
+
         VocabularyRecordPageResult emptyResult = new VocabularyRecordPageResult();
         VocabularyRecordAPI.VocabularyRecordQueryBuilder query = EasyMock.createMock(VocabularyRecordAPI.VocabularyRecordQueryBuilder.class);
         EasyMock.expect(query.search(EasyMock.anyString())).andReturn(query).anyTimes();
@@ -108,15 +134,6 @@ public class HerisQuartzPluginTest {
         EasyMock.expect(vocabularyRecordAPI.createEmptyRecord(EasyMock.anyLong(), EasyMock.anyLong(), EasyMock.anyBoolean())).andReturn(newEmptyRecord()).anyTimes();
 
         EasyMock.replay(vocabularyRecordAPI);
-
-        PowerMock.mockStatic(VocabularyAPIManager.class);
-        VocabularyAPIManager vocabularyAPIManager = EasyMock.createMock(VocabularyAPIManager.class);
-        EasyMock.expect(VocabularyAPIManager.getInstance()).andReturn(vocabularyAPIManager).anyTimes();
-        EasyMock.expect(vocabularyAPIManager.vocabularies()).andReturn(vocabularyAPI).anyTimes();
-        EasyMock.expect(vocabularyAPIManager.vocabularySchemas()).andReturn(vocabularySchemaAPI).anyTimes();
-        EasyMock.expect(vocabularyAPIManager.vocabularyRecords()).andReturn(vocabularyRecordAPI).anyTimes();
-        PowerMock.replay(VocabularyAPIManager.class);
-        EasyMock.replay(vocabularyAPIManager);
     }
 
     private ExtendedVocabularyRecord newEmptyRecord() {
@@ -149,6 +166,7 @@ public class HerisQuartzPluginTest {
         result.setMainEntry(mainValue);
         result.setTitleField(mainValue);
         result.setUnique(unique);
+        result.setTranslationDefinitions(Collections.emptySet());
         return result;
     }
 

@@ -40,7 +40,6 @@ import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -97,8 +96,6 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
 
     private long vocabularyId;
 
-    private VocabularyAPIManager vocabularyAPI = VocabularyAPIManager.getInstance();
-
     // mapping between json element and vocabulary field
     @Getter
     private Map<String, String> jsonMapping;
@@ -135,7 +132,7 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
         parsedRecords = generateRecordsFromFile();
 
         // save records
-        VocabularyRecordAPI recordAPI = vocabularyAPI.vocabularyRecords();
+        VocabularyRecordAPI recordAPI = VocabularyAPIManager.getInstance().vocabularyRecords();
         parsedRecords.forEach(recordAPI::save);
 
         // delete downloaded file
@@ -184,9 +181,9 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             }
         }
 
-        vocabulary = vocabularyAPI.vocabularies().findByName(vocabularyName);
+        vocabulary = VocabularyAPIManager.getInstance().vocabularies().findByName(vocabularyName);
         vocabularyId = vocabulary.getId();
-        vocabularySchema = vocabularyAPI.vocabularySchemas().get(vocabulary.getSchemaId());
+        vocabularySchema = VocabularyAPIManager.getInstance().vocabularySchemas().get(vocabulary.getSchemaId());
         identifierVocabFieldId = vocabularySchema.getDefinitions().stream()
                 .filter(d -> d.getName().equals(identifierVocabField))
                 .findFirst()
@@ -333,14 +330,14 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
      * 
      */
     private ExtendedVocabularyRecord findOrCreateNewRecord(String identifierValue) {
-        List<ExtendedVocabularyRecord> results = vocabularyAPI.vocabularyRecords()
+        List<ExtendedVocabularyRecord> results = VocabularyAPIManager.getInstance().vocabularyRecords()
                 .list(vocabularyId)
                 .search(identifierVocabFieldId + ":" + identifierValue)
                 .request()
                 .getContent();
 
         if (results.isEmpty()) {
-            return vocabularyAPI.vocabularyRecords().createEmptyRecord(vocabularyId, null, false);
+            return VocabularyAPIManager.getInstance().vocabularyRecords().createEmptyRecord(vocabularyId, null, false);
         } else if (results.size() == 1) {
             return results.get(0);
         } else {
