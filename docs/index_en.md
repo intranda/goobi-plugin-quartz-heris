@@ -19,7 +19,7 @@ A prerequisite is Goobi version 23.03 or newer. Additionally, the following two 
 After installation, the functionality of the plugin is available within the REST API of Goobi workflow.
 
 ## Overview and functionality
-The import occurs regularly at the times specified in the goobi_config.properties file. Alternatively, the import can also be manually triggered at any time. To do this, an administrator can open the Scheduled Tasks section and execute the HERIS Import once.
+The import occurs regularly at the times specified in the `goobi_config.properties` file. Alternatively, the import can also be manually triggered at any time. To do this, an administrator can open the `Scheduled Tasks` section and execute the HERIS Import once.
 
 ![The Sceduled Tasks section](screen1_en.png)
 
@@ -52,6 +52,6 @@ Parameter               | Explanation
 To ensure the update is automatically executed, the execution time must be configured in the `goobi_config.properties` file. This is done by specifying the cron syntax for when it should run. For a daily execution at midnight, the following can be used:
 
 
-```
+```toml
 intranda_quartz_herisJob=0 0 0 * * ?
 ```
