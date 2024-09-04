@@ -23,11 +23,11 @@ Der Import findet regelmäßig zu den in der Datei `goobi_config.properties` fes
 
 ![Der Bereich der Regelmäßigen Aufgaben](screen1_de.png)
 
-Wenn das Plugin ausgeführt wird, verbindet es sich mit dem SFTP Server und sucht dort nach einer JSON Datei. Wenn mehrere Dateien existieren, wird die Datei mit dem neuesten Zeitstempel genutzt. Die Datei wird herunter geladen, geöffnet und das json array in einzelne Objekte geteilt. Pro Objekt wird nun der Identifier gesucht und mit den existierenden Datensätzen verglichen. Wenn der Identifier bereits in einem Datensatz existiert, wird der Datensatz aktualisiert, ansonsten wird ein neuer Datensatz erstellt.
+Wenn das Plugin ausgeführt wird, verbindet es sich mit dem SFTP-Server und sucht dort nach einer JSON-Datei. Wenn mehrere Dateien existieren, wird die Datei mit dem neuesten Zeitstempel genutzt. Die Datei wird herunter geladen, geöffnet und das JSON-Array in einzelne Objekte geteilt. Pro Objekt wird nun der Identifier gesucht und mit den existierenden Datensätzen verglichen. Wenn der Identifier bereits in einem Datensatz existiert, wird der Datensatz aktualisiert, ansonsten wird ein neuer Datensatz erstellt.
 
 Anschließend werden die konfigurierten Felder durchlaufen und die einzelnen Werte importiert.
 
-Am Ende wird die heruntergeladene Datei wieder vom Goobi System gelöscht. Auf dem SFTP System werden keine Daten geändert.
+Am Ende wird die heruntergeladene Datei wieder vom Goobi-System gelöscht. Auf dem SFTP-System werden keine Daten geändert.
 
 ## Konfiguration
 Die Konfiguration des Plugins erfolgt in der Datei `plugin_intranda_quartz_heris.xml` wie hier aufgezeigt:
@@ -49,7 +49,7 @@ Parameter               | Erläuterung
 `jsonPath`              | JSONPath-Ausdruck für das zu extrahierende Feld aus der JSON-Datei.
 `identifier`            | Kennzeichnung des Feldes für das Matching mit dem Vokabular.
 
-Damit die Aktualisierung automatisch ausgeführt wird, muss der Zeitpunkt der Ausführung in der Datei `goobi_config.properties` konfiguriert werden. Dazu wird in der cron-Syntax angegeben, wann ausgeführt werden soll. Für eine tägliche Ausführung um Mitternacht kann folgendes genutzt werden: 
+Damit die Aktualisierung automatisch ausgeführt wird, muss der Zeitpunkt der Ausführung in der Datei `goobi_config.properties` konfiguriert werden. Dazu wird in der cron-Syntax angegeben, wann dieser ausgeführt werden soll. Für eine tägliche Ausführung um Mitternacht kann folgendes genutzt werden: 
 
 ```toml
 intranda_quartz_herisJob=0 0 0 * * ?
