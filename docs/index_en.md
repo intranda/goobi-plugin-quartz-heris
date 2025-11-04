@@ -3,6 +3,10 @@ title: HERIS Vocabulary Update
 identifier: intranda_quartz_heris
 description: Plugin for Automatic Update of the HERIS Vocabulary
 published: true
+keywords:
+    - Goobi workflow
+    - Plugin
+    - Quartz Plugin
 ---
 
 ## Introduction
