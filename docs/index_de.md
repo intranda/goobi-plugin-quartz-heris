@@ -1,7 +1,7 @@
 ---
 title: HERIS Vokabular Aktualisierung
 identifier: intranda_quartz_heris
-description: Plugin für die Autmatische Aktualisierung des HERIS Vokabulars
+description: Plugin für die Automatische Aktualisierung des HERIS Vokabulars
 published: true
 keywords:
     - Goobi workflow
@@ -27,7 +27,7 @@ Der Import findet regelmäßig zu den in der Datei `goobi_config.properties` fes
 
 ![Der Bereich der Regelmäßigen Aufgaben](screen1_de.png)
 
-Wenn das Plugin ausgeführt wird, verbindet es sich mit dem SFTP-Server und sucht dort nach einer JSON-Datei. Wenn mehrere Dateien existieren, wird die Datei mit dem neuesten Zeitstempel genutzt. Die Datei wird herunter geladen, geöffnet und das JSON-Array in einzelne Objekte geteilt. Pro Objekt wird nun der Identifier gesucht und mit den existierenden Datensätzen verglichen. Wenn der Identifier bereits in einem Datensatz existiert, wird der Datensatz aktualisiert, ansonsten wird ein neuer Datensatz erstellt.
+Wenn das Plugin ausgeführt wird, verbindet es sich mit dem SFTP-Server und sucht dort nach einer JSON-Datei. Wenn mehrere Dateien existieren, wird die Datei mit dem neuesten Zeitstempel genutzt. Die Datei wird heruntergeladen, geöffnet und das JSON-Array in einzelne Objekte geteilt. Pro Objekt wird nun der Identifier gesucht und mit den existierenden Datensätzen verglichen. Wenn der Identifier bereits in einem Datensatz existiert, wird der Datensatz aktualisiert, ansonsten wird ein neuer Datensatz erstellt.
 
 Anschließend werden die konfigurierten Felder durchlaufen und die einzelnen Werte importiert.
 

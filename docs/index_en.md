@@ -25,7 +25,7 @@ After installation, the functionality of the plugin is available within the REST
 ## Overview and functionality
 The import occurs regularly at the times specified in the `goobi_config.properties` file. Alternatively, the import can also be manually triggered at any time. To do this, an administrator can open the `Scheduled Tasks` section and execute the HERIS Import once.
 
-![The Sceduled Tasks section](screen1_en.png)
+![The Scheduled Tasks section](screen1_en.png)
 
 When the plugin is executed, it connects to the SFTP server and searches for a JSON file. If multiple files exist, the file with the latest timestamp is used. The file is downloaded, opened, and the JSON array is split into individual objects. For each object, the identifier is searched and compared with existing records. If the identifier already exists in a record, the record is updated; otherwise, a new record is created.
 
