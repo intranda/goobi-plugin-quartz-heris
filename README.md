@@ -15,8 +15,8 @@ Detail                      | Description
 **Plugin identifier**       | intranda_quartz_heris
 **Plugin type**             | quartz
 **Licence**                 | GPL 2.0 or newer
-**Documentation (German)**  | https://docs.goobi.io/workflow-plugins/v/ger/quartz/goobi-plugin-quartz-heris
-**Documentation (English)** | https://docs.goobi.io/workflow-plugins/v/eng/quartz/goobi-plugin-quartz-heris
+**Documentation (German)**  | https://docs.goobi.io/de/workflow/plugins/quartz/goobi-plugin-quartz-heris
+**Documentation (English)** | https://docs.goobi.io/en/workflow/plugins/quartz/goobi-plugin-quartz-heris
 
 ## Goobi details
 
