@@ -316,8 +316,8 @@ public class HerisQuartzPlugin extends AbstractGoobiJob {
             TranslationInstance translationInstance = new TranslationInstance();
             translationInstance.setValue((String) val);
             FieldValue fieldValue = new FieldValue();
-            fieldValue.setTranslations(List.of(translationInstance));
-            field.setValues(List.of(fieldValue));
+            fieldValue.getTranslations().add(translationInstance);
+            field.getValues().add(fieldValue);
 
             vocabRecord.getFields().add(field);
         }

@@ -4,6 +4,8 @@ import de.sub.goobi.config.ConfigurationHelper;
 import de.sub.goobi.forms.SpracheForm;
 import de.sub.goobi.helper.Helper;
 import io.goobi.vocabulary.exchange.FieldDefinition;
+import io.goobi.vocabulary.exchange.FieldInstance;
+import io.goobi.vocabulary.exchange.FieldValue;
 import io.goobi.vocabulary.exchange.Vocabulary;
 import io.goobi.vocabulary.exchange.VocabularyRecord;
 import io.goobi.vocabulary.exchange.VocabularySchema;
@@ -243,5 +245,31 @@ public class HerisQuartzPluginTest {
         List<VocabularyRecord> parsedRecords = plugin.generateRecordsFromFile();
 
         assertEquals(87, parsedRecords.size());
+    }
+
+    /**
+     * VocabularyRecordAPI.save() cleans up empty entries in place (removeIf on the fields set and on every values and translations list), so the
+     * parsed records must only contain modifiable collections.
+     */
+    @Test
+    public void testParsedRecordsHaveModifiableFieldCollections() throws Exception {
+        HerisQuartzPlugin plugin = new HerisQuartzPlugin();
+        plugin.parseConfiguration();
+        plugin.setJsonFile(jsonFile);
+
+        List<VocabularyRecord> parsedRecords = plugin.generateRecordsFromFile();
+
+        int visitedValues = 0;
+        for (VocabularyRecord vocabularyRecord : parsedRecords) {
+            for (FieldInstance field : vocabularyRecord.getFields()) {
+                for (FieldValue value : field.getValues()) {
+                    value.getTranslations().removeIf(t -> false);
+                    visitedValues++;
+                }
+                field.getValues().removeIf(v -> false);
+            }
+            vocabularyRecord.getFields().removeIf(f -> false);
+        }
+        assertTrue(visitedValues > 0);
     }
 }
